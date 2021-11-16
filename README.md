@@ -18,6 +18,16 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Testing
+
+Unit tests are written using [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). Tests can be run with:
+
+```bash
+npm run test
+# or
+yarn test
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
