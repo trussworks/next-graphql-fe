@@ -46,7 +46,7 @@ yarn e2e
 
 ### Run all tests
 
-Unit and integration/end-to-end tests can both be run using:
+Unit and end-to-end tests can both be run using:
 
 ```bash
 npm run test
