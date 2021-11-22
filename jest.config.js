@@ -22,6 +22,7 @@ module.exports = {
   testPathIgnorePatterns: [
     "<rootDir>/node_modules/",
     "<rootDir>/.next/",
+    "^.+\\.(spec.js|spec.jsx|spec.ts|spec.tsx)$",
     "^.+\\.module\\.(css|sass|scss)$",
   ],
   testEnvironment: "jsdom",
