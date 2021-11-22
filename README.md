@@ -20,7 +20,33 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Testing
 
-Unit tests are written using [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). Tests can be run with:
+### Unit Testing
+
+Unit tests are written using [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). The can be run using:
+
+```bash
+npm run unit
+# or
+yarn unit
+```
+
+### End-to-End Testing
+
+End-to-end tests utilize [Playwright](https://playwright.dev/) and should follow the [Page Object Model](https://playwright.dev/docs/pom/) pattern.
+
+The core of this pattern is to create an class for each page in the application to be tested. This class can then be used to abstract away redundant functionality (like page element selections) and perform common page actions. This provides a friendly API to utilize when writing tests and helps encapsulate reusable code to avoid repetition and improve maintainability. For more, see the [Playwright example](https://playwright.dev/docs/test-pom).
+
+End-to-end tests can be run with:
+
+```bash
+npm run e2e
+# or
+yarn e2e
+```
+
+### Run all tests
+
+Unit and integration/end-to-end tests can both be run using:
 
 ```bash
 npm run test
