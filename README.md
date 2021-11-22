@@ -36,7 +36,7 @@ End-to-end tests utilize [Playwright](https://playwright.dev/) and should follow
 
 The core of this pattern is to create an class for each page in the application to be tested. This class can then be used to abstract away redundant functionality (like page element selections) and perform common page actions. This provides a friendly API to utilize when writing tests and helps encapsulate reusable code to avoid repetition and improve maintainability. For more, see the [Playwright example](https://playwright.dev/docs/test-pom).
 
-End-to-end tests can be run with:
+To run the End-to-end tests the development server must first be started (`yarn dev`), then the tests can be run with:
 
 ```bash
 npm run e2e
@@ -53,6 +53,8 @@ npm run test
 # or
 yarn test
 ```
+
+Note: End-to-end tests require the development server to be running.
 
 ## Learn More
 
