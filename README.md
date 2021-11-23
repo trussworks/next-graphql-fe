@@ -2,7 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+### Docker
+
+This application is containerized using [Docker](https://www.docker.com), you should download and install Docker first. For help, see [the docker docs](https://docs.docker.com/desktop/mac/install/).
+
+Do not move on until you can successfully run both `docker -v` and `docker-compose -v`.
+
+### Running
+
+Build and start the docker container
 
 ```bash
 yarn dev
