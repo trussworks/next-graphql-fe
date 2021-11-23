@@ -5,8 +5,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
@@ -25,8 +23,6 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 Unit tests are written using [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). The can be run using:
 
 ```bash
-npm run unit
-# or
 yarn unit
 ```
 
@@ -39,8 +35,6 @@ The core of this pattern is to create an class for each page in the application 
 To run the End-to-end tests the development server must first be started (`yarn dev`), then the tests can be run with:
 
 ```bash
-npm run e2e
-# or
 yarn e2e
 ```
 
@@ -49,8 +43,6 @@ yarn e2e
 Unit and end-to-end tests can both be run using:
 
 ```bash
-npm run test
-# or
 yarn test
 ```
 
