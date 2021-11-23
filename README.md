@@ -13,7 +13,7 @@ Do not move on until you can successfully run both `docker -v` and `docker-compo
 Build and start the docker container
 
 ```bash
-yarn dev
+yarn up
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
