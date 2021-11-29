@@ -5,8 +5,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
@@ -20,13 +18,35 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Testing
 
-Unit tests are written using [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). Tests can be run with:
+### Unit Testing
+
+Unit tests are written using [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). The can be run using:
 
 ```bash
-npm run test
-# or
+yarn unit
+```
+
+### End-to-End Testing
+
+End-to-end tests utilize [Playwright](https://playwright.dev/) and should follow the [Page Object Model](https://playwright.dev/docs/pom/) pattern.
+
+The core of this pattern is to create a class for each page in the application to be tested. This class can then be used to abstract away redundant functionality (like page element selections) and perform common page actions. This provides a friendly API to utilize when writing tests and helps encapsulate reusable code to avoid repetition and improve maintainability. For more, see the [Playwright example](https://playwright.dev/docs/test-pom).
+
+To run the End-to-end tests the development server must first be started (`yarn dev`), then the tests can be run with:
+
+```bash
+yarn e2e
+```
+
+### Run all tests
+
+Unit and end-to-end tests can both be run using:
+
+```bash
 yarn test
 ```
+
+Note: End-to-end tests require the development server to be running.
 
 ## Learn More
 
