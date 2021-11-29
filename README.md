@@ -24,6 +24,14 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Stopping
+
+The docker container can be stopped using:
+
+```bash
+yarn stop
+```
+
 ## Testing
 
 ### Unit Testing
