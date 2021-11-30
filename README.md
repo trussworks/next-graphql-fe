@@ -2,10 +2,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+### Docker
+
+This application is containerized using [Docker](https://www.docker.com), you should download and install Docker first. For help, see [the docker docs](https://docs.docker.com/desktop/mac/install/).
+
+Do not move on until you can successfully run both `docker -v` and `docker-compose -v`.
+
+### Running
+
+Build and start the docker container
 
 ```bash
-yarn dev
+yarn up
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -15,6 +23,14 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+### Stopping
+
+The docker container can be stopped using:
+
+```bash
+yarn stop
+```
 
 ## Testing
 
