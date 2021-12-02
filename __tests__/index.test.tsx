@@ -23,4 +23,19 @@ describe("Home", () => {
     // Assert there are no a11y violations
     expect(results).toHaveNoViolations()
   })
+
+  it("fails for inaccessable components", async () => {
+    const InaccessiableComponent = () => (
+      // eslint-disable-next-line
+      <img src="/vercel.svg" width={72} height={16} />
+    )
+
+    const { container } = render(<InaccessiableComponent />)
+
+    // Run aXe a11y scan on the rendered container
+    const results = await axe(container)
+
+    // Assert there are a11y violations (not no violations)
+    expect(results).not.toHaveNoViolations()
+  })
 })
