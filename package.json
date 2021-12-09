@@ -6,9 +6,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest && playwright test",
+    "test": "jest && NEXT_PUBLIC_API_URL=http://localhost:3000 playwright test",
     "unit": "jest --watch",
-    "e2e": "playwright test",
+    "e2e": "NEXT_PUBLIC_API_URL=http://localhost:3000 playwright test",
     "up": "docker-compose up -d --build",
     "stop": "docker-compose stop nextjs"
   },
