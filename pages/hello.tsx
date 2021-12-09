@@ -3,7 +3,7 @@ import type { NextPage } from "next"
 import Head from "next/head"
 import Link from "next/link"
 
-import { useHello } from "utils/hello"
+import { useHello } from "../utils/hello"
 import styles from "../styles/Home.module.css"
 
 const isError = (error: unknown): error is Error => error instanceof Error
