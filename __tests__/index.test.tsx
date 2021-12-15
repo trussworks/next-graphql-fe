@@ -1,7 +1,11 @@
 import React from "react"
-import { render, screen } from "@testing-library/react"
-import Home from "../pages/index"
 import { axe } from "jest-axe"
+import { screen } from "@testing-library/react"
+import {
+  renderWithQueryClient as render,
+  validateA11y,
+} from "../utils/test-utils"
+import Home from "../pages/index"
 
 describe("Home", () => {
   it("renders a heading", () => {
@@ -17,11 +21,7 @@ describe("Home", () => {
   it("is accessiable", async () => {
     const { container } = render(<Home />)
 
-    // Run aXe a11y scan on the rendered container
-    const results = await axe(container)
-
-    // Assert there are no a11y violations
-    expect(results).toHaveNoViolations()
+    await validateA11y(container)
   })
 
   it("fails for inaccessable components", async () => {

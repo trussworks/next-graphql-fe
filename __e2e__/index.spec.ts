@@ -11,6 +11,11 @@ test("Test index page using Page Object Model pattern", async ({ page }) => {
     "Get started by editing pages/index.tsx"
   )
 
+  // Hello Test Page Link
+  const helloHref = "/hello"
+  await expect(indexPage.helloLink).toHaveAttribute("href", helloHref)
+  await expect(indexPage.helloLink).toContainText("Test Page")
+
   // Documentation Link
   const docsHref = "https://nextjs.org/docs"
   await expect(indexPage.docsLink).toHaveAttribute("href", docsHref)
@@ -34,7 +39,4 @@ test("Test index page using Page Object Model pattern", async ({ page }) => {
 
   // Footer
   await expect(indexPage.footer.locator("a")).toContainText("Powered by <img")
-
-  // Snapshot
-  // TODO: expect(await page.screenshot()).toMatchSnapshot("index.png")
 })
