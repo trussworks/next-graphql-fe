@@ -1,6 +1,6 @@
 import { Locator, Page } from "@playwright/test"
 
-const apiURL = process.env.NEXT_PUBLIC_API_URL
+const apiURL = process.env.PLAYWRIGHT_URL
 
 export class IndexPage {
   readonly page: Page
