@@ -4,7 +4,7 @@ import Head from "next/head"
 import Link from "next/link"
 import { Button, GovBanner } from "@trussworks/react-uswds"
 
-import { useHello } from "utils/hello"
+import { useHello } from "../utils/hello"
 import styles from "styles/Home.module.scss"
 
 const isError = (error: unknown): error is Error => error instanceof Error
@@ -34,7 +34,7 @@ const HelloPage: NextPage = () => {
           I am a React-USWDS button
         </Button>
 
-        <h3>And here is a banner: </h3>
+        <h2>And here is a banner: </h2>
         <GovBanner />
 
         <Link href="/">
