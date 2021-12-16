@@ -8,6 +8,7 @@ import { ReactQueryDevtools } from "react-query/devtools"
 import "@trussworks/react-uswds/lib/uswds.css" // TODO: Should be getting this from USWDS
 import "@trussworks/react-uswds/lib/index.css"
 
+import { UserProvider } from "utils/user"
 import { Header } from "components/Header"
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -19,7 +20,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         },
       })
   )
+
   return (
+    <UserProvider>
       <QueryClientProvider client={queryClient}>
         <div>
           <Head>
@@ -34,6 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </div>
         <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
+    </UserProvider>
   )
 }
 
