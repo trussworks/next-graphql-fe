@@ -4,6 +4,8 @@ const apiURL = process.env.PLAYWRIGHT_URL
 
 export class HelloPage {
   readonly page: Page
+  readonly header: Locator
+  readonly main: Locator
   readonly h1: Locator
   readonly description: Locator
   readonly backendGreeting: Locator
@@ -11,10 +13,12 @@ export class HelloPage {
 
   constructor(page: Page) {
     this.page = page
-    this.h1 = page.locator("h1")
-    this.description = page.locator("p").first()
+    this.header = page.locator("header")
+    this.main = page.locator("main")
+    this.h1 = this.main.locator("h1")
+    this.description = this.main.locator("p").first()
     this.backendGreeting = this.description.locator("code")
-    this.homeLink = page.locator("a").first()
+    this.homeLink = this.main.locator("a").first()
   }
 
   async goto() {
