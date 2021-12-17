@@ -4,7 +4,7 @@ import { Header as UswdsHeader } from "@trussworks/react-uswds"
 
 import styles from "styles/Header.module.scss"
 
-import { useUser } from "utils/user"
+import { useUser } from "../hooks/user"
 const Header = () => {
   const { user } = useUser()
 
