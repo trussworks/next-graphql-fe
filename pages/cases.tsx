@@ -3,8 +3,8 @@ import type { NextPage } from "next"
 import { useRouter } from "next/router"
 import { Table, Tag } from "@trussworks/react-uswds"
 
-import { useCases } from "../utils/cases"
-import { ColorTag } from "components/ColorTag"
+import { useCases } from "../hooks/cases"
+import { ColorTag } from "../components/ColorTag"
 import styles from "styles/Cases.module.scss"
 
 const TodoTag = () => (
