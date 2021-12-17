@@ -2,9 +2,10 @@ import React from "react"
 import type { NextPage } from "next"
 import Head from "next/head"
 import Link from "next/link"
+import { Button, GovBanner } from "@trussworks/react-uswds"
 
 import { useHello } from "../utils/hello"
-import styles from "../styles/Home.module.css"
+import styles from "styles/Home.module.scss"
 
 const isError = (error: unknown): error is Error => error instanceof Error
 
@@ -28,6 +29,13 @@ const HelloPage: NextPage = () => {
             {data ? data.hello : isError(error) ? error.message : "loading..."}
           </code>
         </p>
+
+        <Button type="button" onClick={() => alert("Hi")}>
+          I am a React-USWDS button
+        </Button>
+
+        <h2>And here is a banner: </h2>
+        <GovBanner />
 
         <Link href="/">
           <a className={styles.card}>Home</a>
