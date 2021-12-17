@@ -1,15 +1,17 @@
 import { useQuery } from "react-query"
-import a from "./mockCaseData.json"
+import mockCaseData from "../__mocks__/mockCaseData.json"
 
 const CASE = "case"
 const CASES = "cases"
 
 const mockCasesQuery = () => {
-  return Promise.resolve(a.data)
+  return Promise.resolve(mockCaseData.data)
 }
 
 const mockCaseQuery = (caseId: number) => {
-  const thisCase = a.data.cases.filter((c) => c.case_id === caseId)[0]
+  const thisCase = mockCaseData.data.cases.filter(
+    (c) => c.case_id === caseId
+  )[0]
 
   return Promise.resolve(thisCase)
 }

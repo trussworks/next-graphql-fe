@@ -9,7 +9,7 @@ import {
   TextInput,
 } from "@trussworks/react-uswds"
 
-import { useUser } from "../utils/user"
+import { useUser } from "../hooks/user"
 import styles from "styles/Login.module.scss"
 
 const LoginPage: NextPage = () => {
