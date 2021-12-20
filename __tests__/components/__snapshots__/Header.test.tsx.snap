@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches snapshot with user 1`] = `
+<div>
+  <header
+    class="usa-header usa-header--basic header"
+    data-testid="header"
+  >
+    <img
+      alt="Sith Finder"
+      height="27"
+      src="/temp_logo.png"
+      width="189"
+    />
+    <div
+      class="grow"
+    />
+    <a
+      class="user"
+      href="/cases"
+    >
+      Test User
+    </a>
+    <a
+      class="signout"
+      href="/login"
+    >
+      Sign out
+    </a>
+  </header>
+</div>
+`;
+
+exports[`Header matches snapshot without user 1`] = `
+<div>
+  <header
+    class="usa-header usa-header--basic header"
+    data-testid="header"
+  >
+    <img
+      alt="Sith Finder"
+      height="27"
+      src="/temp_logo.png"
+      width="189"
+    />
+    <div
+      class="grow"
+    />
+    <a
+      class="user"
+      href="/cases"
+    >
+      Test User
+    </a>
+    <a
+      class="signout"
+      href="/login"
+    >
+      Sign out
+    </a>
+  </header>
+</div>
+`;
