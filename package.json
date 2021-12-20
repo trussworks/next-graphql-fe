@@ -10,6 +10,7 @@
     "unit": "jest --watch",
     "coverage": "jest --coverage",
     "e2e": "PLAYWRIGHT_URL=http://localhost:3000 playwright test",
+    "e2e:debug": "PWDEBUG=1 yarn e2e",
     "up": "docker-compose up -d --build",
     "stop": "docker-compose stop nextjs"
   },
