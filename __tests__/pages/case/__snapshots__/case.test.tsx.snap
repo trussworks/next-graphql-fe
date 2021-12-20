@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Case Page matches snapshot while loading 1`] = `
+<div>
+  <main>
+    <section
+      class="section"
+    >
+      <nav
+        aria-label="Breadcrumbs"
+        class="usa-breadcrumb breadcrumbBar"
+      >
+        <ol
+          class="usa-breadcrumb__list"
+        >
+          <li
+            class="usa-breadcrumb__list-item link"
+          >
+            <a
+              href="/cases"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            aria-current="page"
+            class="usa-breadcrumb__list-item usa-current"
+          >
+            <span
+              class="breadcrumbLink"
+            />
+          </li>
+        </ol>
+      </nav>
+      <h1
+        class="h1"
+      >
+        loading...
+      </h1>
+    </section>
+  </main>
+</div>
+`;
