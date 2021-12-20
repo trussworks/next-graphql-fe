@@ -39,7 +39,7 @@ const LoginPage: NextPage = () => {
         className={styles.form}
       >
         <Fieldset legend="Sign In" legendStyle="large">
-          <span>Access your account.</span>
+          <span data-testid="sign-in-title">Access your account.</span>
           <Label htmlFor="username">Email address</Label>
           <TextInput
             id="username"
