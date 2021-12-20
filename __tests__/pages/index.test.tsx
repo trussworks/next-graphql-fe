@@ -8,6 +8,12 @@ import {
 import Home from "../../pages/index"
 
 describe("Home", () => {
+  it("matches snapshot", () => {
+    const { container } = render(<Home />)
+
+    expect(container).toMatchSnapshot()
+  })
+
   it("is accessiable", async () => {
     const { container } = render(<Home />)
 

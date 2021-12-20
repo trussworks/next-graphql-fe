@@ -15,6 +15,12 @@ describe("Color Tag", () => {
     expect(tag).toHaveTextContent(/blue/i)
   })
 
+  it("matches snapshot", () => {
+    const { container } = render(<ColorTag color={TagColorsEnum.blue} />)
+
+    expect(container).toMatchSnapshot()
+  })
+
   it("blue tag is accessiable", async () => {
     const { container } = render(<ColorTag color={TagColorsEnum.blue} />)
 
