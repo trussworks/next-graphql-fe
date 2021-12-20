@@ -1,33 +1,31 @@
 import { Tag } from "@trussworks/react-uswds"
+import { TagColorsEnum } from "../types/enums"
 
-const ColorTag = ({ color }: { color: string }) => {
+// TODO: This can (and probably should) be done with CSS classes once we get styling worked out
+const ColorTag = ({ color }: { color: TagColorsEnum }) => {
   let backgroundColor, textColor
   switch (color) {
-    case "gray": {
+    case TagColorsEnum.gray: {
       backgroundColor = "#3D4551"
       textColor = "#FFF"
       break
     }
-    case "blue": {
+    case TagColorsEnum.blue: {
       backgroundColor = "#73B3E7"
       textColor = "#FFF"
       break
     }
-    case "purple": {
+    case TagColorsEnum.purple: {
       backgroundColor = "#E4D9E9"
       textColor = "#000"
       break
     }
-    case "brown": {
+    case TagColorsEnum.brown: {
       backgroundColor = "#F2E4D4"
       textColor = "#000"
       break
     }
-    default: {
-      backgroundColor = "#3D4551"
-      textColor = "#FFF"
-      break
-    }
+    default: // Do Nothing
   }
 
   return (

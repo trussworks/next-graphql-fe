@@ -3,8 +3,9 @@ import type { NextPage } from "next"
 import { useRouter } from "next/router"
 import { Table, Tag } from "@trussworks/react-uswds"
 
-import { useCases } from "../utils/cases"
-import { ColorTag } from "components/ColorTag"
+import { useCases } from "../hooks/cases"
+import { ColorTag } from "../components/ColorTag"
+import { TagColorsEnum } from "../types/enums"
 import styles from "styles/Cases.module.scss"
 
 const TodoTag = () => (
@@ -41,7 +42,7 @@ const CasesPage: NextPage = () => {
                   }}
                 >
                   <td>
-                    <ColorTag color={c.color_code} />
+                    <ColorTag color={c.color_code as TagColorsEnum} />
                   </td>
                   <th scope="row">
                     {c.person.first_name} {c.person.last_name}

@@ -1,10 +1,9 @@
 import React from "react"
 import type { NextPage } from "next"
-import Head from "next/head"
 import Link from "next/link"
 import { Button, GovBanner } from "@trussworks/react-uswds"
 
-import { useHello } from "../utils/hello"
+import { useHello } from "../hooks/hello"
 import styles from "styles/Home.module.scss"
 
 const isError = (error: unknown): error is Error => error instanceof Error

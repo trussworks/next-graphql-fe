@@ -8,7 +8,7 @@ import { ReactQueryDevtools } from "react-query/devtools"
 import "@trussworks/react-uswds/lib/uswds.css" // TODO: Should be getting this from USWDS
 import "@trussworks/react-uswds/lib/index.css"
 
-import { UserProvider } from "utils/user"
+import { UserProvider } from "hooks/user"
 import { Header } from "components/Header"
 
 function MyApp({ Component, pageProps }: AppProps) {

@@ -1,23 +1,13 @@
 import React from "react"
 import { axe } from "jest-axe"
-import { screen } from "@testing-library/react"
+
 import {
   renderWithQueryClient as render,
   validateA11y,
-} from "../utils/test-utils"
-import Home from "../pages/index"
+} from "../../utils/test-utils"
+import Home from "../../pages/index"
 
 describe("Home", () => {
-  it("renders a heading", () => {
-    render(<Home />)
-
-    const heading = screen.getByRole("heading", {
-      name: /welcome to the sith front-end/i,
-    })
-
-    expect(heading).toBeInTheDocument()
-  })
-
   it("is accessiable", async () => {
     const { container } = render(<Home />)
 
