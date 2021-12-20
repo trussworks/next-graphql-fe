@@ -1,6 +1,7 @@
 import { Tag } from "@trussworks/react-uswds"
 import { TagColorsEnum } from "../types/enums"
 
+// TODO: This can (and probably should) be done with CSS classes once we get styling worked out
 const ColorTag = ({ color }: { color: TagColorsEnum }) => {
   let backgroundColor, textColor
   switch (color) {
