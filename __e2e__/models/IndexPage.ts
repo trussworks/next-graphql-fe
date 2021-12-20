@@ -4,6 +4,8 @@ const apiURL = process.env.PLAYWRIGHT_URL
 
 export class IndexPage {
   readonly page: Page
+  readonly header: Locator
+  readonly main: Locator
   readonly h1: Locator
   readonly description: Locator
   readonly links: Locator
@@ -16,9 +18,11 @@ export class IndexPage {
 
   constructor(page: Page) {
     this.page = page
-    this.h1 = page.locator("h1")
-    this.description = page.locator("p").first()
-    this.links = page.locator("a")
+    this.header = page.locator("header")
+    this.main = page.locator("main")
+    this.h1 = this.main.locator("h1")
+    this.description = this.main.locator("p").first()
+    this.links = this.main.locator("a")
     this.helloLink = this.links.nth(0)
     this.docsLink = this.links.nth(1)
     this.learnLink = this.links.nth(2)

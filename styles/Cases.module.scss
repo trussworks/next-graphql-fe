@@ -1,0 +1,28 @@
+.main {
+  padding: 2rem 4rem;
+}
+
+.main h1 {
+  margin: 0;
+}
+
+.main p {
+  margin: 8px 0 48px 0;
+}
+
+.row {
+  cursor: pointer;
+}
+
+.row:hover,
+.row:focus,
+.row:active {
+  background-color: #e7f6f8;
+  border-color: "green";
+}
+
+.row td,
+.row th {
+  background-color: inherit !important;
+  text-transform: capitalize;
+}

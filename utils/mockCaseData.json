@@ -1,0 +1,128 @@
+{
+  "data": {
+    "cases": [
+      {
+        "case_id": 1,
+        "color_code": "gray",
+        "date_received": "10-Dec-2021",
+        "person": {
+          "first_name": "jason",
+          "last_name": "ash"
+        },
+        "status": "pre-inquiry",
+        "int_analyst": null
+      },
+      {
+        "case_id": 2,
+        "color_code": "gray",
+        "date_received": "10-Dec-2021",
+        "person": {
+          "first_name": "riley",
+          "last_name": "baker"
+        },
+        "status": "pre-inquiry",
+        "int_analyst": {
+          "first_name": "jonathan"
+        }
+      },
+      {
+        "case_id": 3,
+        "color_code": "blue",
+        "date_received": "10-Dec-2021",
+        "person": {
+          "first_name": "skyler",
+          "last_name": "hunt"
+        },
+        "status": "pre-inquiry",
+        "int_analyst": null
+      },
+      {
+        "case_id": 4,
+        "color_code": "gray",
+        "date_received": "10-Dec-2021",
+        "person": {
+          "first_name": "susan",
+          "last_name": "lee"
+        },
+        "status": "in progress",
+        "int_analyst": null
+      },
+      {
+        "case_id": 5,
+        "color_code": "gray",
+        "date_received": "10-Dec-2021",
+        "person": {
+          "first_name": "kerry",
+          "last_name": "smith"
+        },
+        "status": "in progress",
+        "int_analyst": null
+      },
+      {
+        "case_id": 6,
+        "color_code": "blue",
+        "date_received": "9-Dec-2021",
+        "person": {
+          "first_name": "jessica",
+          "last_name": "smith"
+        },
+        "status": "zero - inactive",
+        "int_analyst": {
+          "first_name": "Jonathan"
+        }
+      },
+      {
+        "case_id": 7,
+        "color_code": "purple",
+        "date_received": "9-Dec-2021",
+        "person": {
+          "first_name": "ted",
+          "last_name": "smith"
+        },
+        "status": "zero - inactive",
+        "int_analyst": {
+          "first_name": "Lisa"
+        }
+      },
+      {
+        "case_id": 8,
+        "color_code": "gray",
+        "date_received": "9-Dec-2021",
+        "person": {
+          "first_name": "christopher",
+          "last_name": "swinglhurse-walters"
+        },
+        "status": "zero - inactive",
+        "int_analyst": {
+          "first_name": "Susan"
+        }
+      },
+      {
+        "case_id": 9,
+        "color_code": "brown",
+        "date_received": "9-Dec-2021",
+        "person": {
+          "first_name": "susan",
+          "last_name": "lee"
+        },
+        "status": "zero - inactive",
+        "int_analyst": {
+          "first_name": "Quinn"
+        }
+      },
+      {
+        "case_id": 10,
+        "color_code": "brown",
+        "date_received": "8-Dec-2021",
+        "person": {
+          "first_name": "kerry",
+          "last_name": "smith"
+        },
+        "status": "zero - inactive",
+        "int_analyst": {
+          "first_name": "Jo"
+        }
+      }
+    ]
+  }
+}
