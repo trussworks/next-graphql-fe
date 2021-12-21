@@ -31,7 +31,7 @@ describe("Login Page", () => {
 
     expect(screen.getByTestId("form")).toBeInTheDocument()
 
-    expect(screen.getAllByText(/sign in/i).at(0)).toBeInTheDocument()
+    expect(screen.getAllByText(/sign in/i)[0]).toBeInTheDocument()
     expect(screen.getByText(/access your account./i)).toBeInTheDocument()
 
     const labels = screen.getAllByTestId("label")
@@ -48,7 +48,7 @@ describe("Login Page", () => {
     expect(showPw).toBeInTheDocument()
     expect(showPw.textContent).toMatchInlineSnapshot(`"Show password"`)
 
-    expect(screen.getAllByText(/sign in/i).at(1)).toBeInTheDocument()
+    expect(screen.getAllByText(/sign in/i)[1]).toBeInTheDocument()
 
     const forgotPw = screen.getByTitle(/forgot password/i)
     expect(forgotPw).toBeInTheDocument()
