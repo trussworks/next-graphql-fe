@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -18,6 +18,10 @@ jobs:
         with:
           file: Dockerfile.dev
           push: false
-          tags: nextjs:latest
+          load: true
+          tags: nextjs
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      - name: Lint source code
+        run: docker run nextjs yarn lint
