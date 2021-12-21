@@ -15,7 +15,7 @@ Object.defineProperty(NextImage, "default", {
 // Add toHaveNoVioloations function to jest expect assertions
 expect.extend(toHaveNoViolations)
 
-afterEach(() => {
+beforeEach(() => {
   jest.clearAllMocks()
   jest.clearAllTimers()
 })
