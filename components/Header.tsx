@@ -12,11 +12,15 @@ const Header = () => {
     <UswdsHeader basic className={styles.header}>
       <Image src="/temp_logo.png" alt="Sith Finder" width={189} height={27} />
       <div className={styles.grow} />
-      <Link href="/cases" key="cases-header-link">
-        <a className={styles.user}>{user}</a>
-      </Link>
+      {user && user.length ? (
+        <Link href="/cases" key="cases-header-link">
+          <a className={styles.user}>{user}</a>
+        </Link>
+      ) : null}
       <Link href="/login" key="logout-header-link">
-        <a className={styles.signout}>Sign out</a>
+        <a className={styles.signout}>
+          {user && user.length ? "Sign out" : "Sign in"}
+        </a>
       </Link>
     </UswdsHeader>
   )

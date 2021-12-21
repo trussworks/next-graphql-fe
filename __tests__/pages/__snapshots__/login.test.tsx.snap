@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Page matches snapshot 1`] = `
+<div>
+  <main
+    class="main"
+  >
+    <form
+      class="usa-form usa-form--large form"
+      data-testid="form"
+    >
+      <fieldset
+        class="usa-fieldset"
+        data-testid="fieldset"
+      >
+        <legend
+          class="usa-legend--large"
+        >
+          Sign In
+        </legend>
+        <span
+          data-testid="sign-in-title"
+        >
+          Access your account.
+        </span>
+        <label
+          class="usa-label"
+          data-testid="label"
+          for="username"
+        >
+          Email address
+        </label>
+        <input
+          autocapitalize="off"
+          autocorrect="off"
+          class="usa-input"
+          data-testid="textInput"
+          id="username"
+          name="username"
+          type="text"
+        />
+        <label
+          class="usa-label"
+          data-testid="label"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="usa-input"
+          data-testid="textInput"
+          id="password"
+          name="password"
+          type="password"
+        />
+        <p
+          class="usa-form__note"
+        >
+          <a
+            aria-controls="password"
+            class="usa-show-password"
+            href="#"
+            title="Show password"
+          >
+            Show password
+          </a>
+        </p>
+        <button
+          class="usa-button"
+          data-testid="button"
+          type="submit"
+        >
+          Sign in
+        </button>
+        <p>
+          <a
+            href="#"
+            title="Forgot password"
+          >
+            Forgot password?
+          </a>
+        </p>
+      </fieldset>
+    </form>
+  </main>
+</div>
+`;

@@ -15,6 +15,12 @@ describe("Hello Page", () => {
     expect(loadingText).toBeInTheDocument()
   })
 
+  it("matches loading snapshot", () => {
+    const { container } = render(<HelloPage />)
+
+    expect(container).toMatchSnapshot()
+  })
+
   it("is accessiable", async () => {
     const { container } = render(<HelloPage />)
 

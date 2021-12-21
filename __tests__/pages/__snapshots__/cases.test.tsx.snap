@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cases Page matches snapshot while 1`] = `
+<div>
+  <main
+    class="main"
+  >
+    <h1>
+      All Alerts
+    </h1>
+    <p
+      role="paragraph"
+    >
+      View of all alerts that are active in the system today.
+    </p>
+    loading...
+  </main>
+</div>
+`;

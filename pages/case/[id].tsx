@@ -21,13 +21,15 @@ const CasesPage: NextPage = () => {
           </Breadcrumb>
           <Breadcrumb current>
             <span className={styles.breadcrumbLink}>
-              {data?.person.first_name} {data?.person.last_name}
+              {data ? `${data.person.first_name} ${data.person.last_name}` : ""}
             </span>
           </Breadcrumb>
         </BreadcrumbBar>
 
         <h1 className={styles.h1}>
-          {data?.person.first_name} {data?.person.last_name}
+          {data
+            ? `${data.person.first_name} ${data.person.last_name}`
+            : "loading..."}
         </h1>
       </section>
     </main>
