@@ -25,3 +25,6 @@ jobs:
 
       - name: Lint source code
         run: docker run nextjs yarn lint
+
+      - name: Run unit tests
+        run: docker run nextjs yarn unit
