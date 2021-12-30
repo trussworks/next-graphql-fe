@@ -1,0 +1,33 @@
+name: Tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Build Docker image for app
+        uses: docker/build-push-action@v2
+        with:
+          file: Dockerfile.dev
+          push: false
+          load: true
+          tags: nextjs
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Lint source code
+        run: docker run nextjs yarn lint
+
+      - name: Run unit tests
+        run: docker run nextjs yarn unit
