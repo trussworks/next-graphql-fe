@@ -12,7 +12,7 @@ yarn dev
 
 ### Docker
 
-This application is containerized using [Docker](https://www.docker.com), to run using docker you should download and install Docker first. For help, see [the docker docs](https://docs.docker.com/desktop/mac/install/).
+This application is containerized using [Docker](https://www.docker.com). To run using Docker you will need to [download and install Docker first](https://docs.docker.com/desktop/mac/install/).
 
 Do not move on until you can successfully run both `docker -v` and `docker-compose -v`.
 
