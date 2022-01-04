@@ -2,9 +2,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+### Run on Host Machine
+
+For development, the application can be run on your host machine using:
+
+```bash
+yarn dev
+```
+
 ### Docker
 
-This application is containerized using [Docker](https://www.docker.com), you should download and install Docker first. For help, see [the docker docs](https://docs.docker.com/desktop/mac/install/).
+This application is containerized using [Docker](https://www.docker.com), to run using docker you should download and install Docker first. For help, see [the docker docs](https://docs.docker.com/desktop/mac/install/).
 
 Do not move on until you can successfully run both `docker -v` and `docker-compose -v`.
 
@@ -30,14 +38,6 @@ The docker container can be stopped using:
 
 ```bash
 yarn stop
-```
-
-### Run on Host Machine
-
-The application can also be run without docker on the host machine using:
-
-```bash
-yarn dev
 ```
 
 ## Testing
