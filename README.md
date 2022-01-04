@@ -32,6 +32,14 @@ The docker container can be stopped using:
 yarn stop
 ```
 
+### Run on Host Machine
+
+The application can also be run without docker on the host machine using:
+
+```bash
+yarn dev
+```
+
 ## Testing
 
 ### Unit Testing
