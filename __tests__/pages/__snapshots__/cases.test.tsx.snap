@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Cases Page matches snapshot while 1`] = `
+exports[`Cases Page matches snapshot while loading 1`] = `
 <div>
   <main
     class="main"
@@ -14,6 +14,373 @@ exports[`Cases Page matches snapshot while 1`] = `
       View of all alerts that are active in the system today.
     </p>
     loading...
+  </main>
+</div>
+`;
+
+exports[`Cases Page matches snapshot with fetched data 1`] = `
+<div>
+  <main
+    class="main"
+  >
+    <h1>
+      All Alerts
+    </h1>
+    <p
+      role="paragraph"
+    >
+      View of all alerts that are active in the system today.
+    </p>
+    <table
+      class="usa-table usa-table--borderless src-components-Table-Table-module__fullwidth--fOyj6"
+      data-testid="table"
+    >
+      <thead>
+        <tr>
+          <th
+            scope="col"
+          >
+            Color Code
+          </th>
+          <th
+            scope="col"
+          >
+            Name
+          </th>
+          <th
+            scope="col"
+          >
+            Date received
+          </th>
+          <th
+            scope="col"
+          >
+            Case status
+          </th>
+          <th
+            scope="col"
+          >
+            InT Analyst Assigned
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="row"
+        >
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(255, 255, 255); background-color: rgb(61, 69, 81);"
+            >
+              GRAY
+            </span>
+          </td>
+          <th
+            scope="row"
+          >
+            Jason
+             
+            Ash
+          </th>
+          <td>
+            12/10/2021
+          </td>
+          <td>
+            PRE_INQUIRY
+          </td>
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(0, 0, 0); background-color: rgb(225, 243, 248);"
+            >
+              To do
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="row"
+        >
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(255, 255, 255); background-color: rgb(61, 69, 81);"
+            >
+              GRAY
+            </span>
+          </td>
+          <th
+            scope="row"
+          >
+            Riley
+             
+            Baker
+          </th>
+          <td>
+            12/10/2021
+          </td>
+          <td>
+            PRE_INQUIRY
+          </td>
+          <td>
+            Jonathan
+          </td>
+        </tr>
+        <tr
+          class="row"
+        >
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(255, 255, 255); background-color: rgb(115, 179, 231);"
+            >
+              BLUE
+            </span>
+          </td>
+          <th
+            scope="row"
+          >
+            Skyler
+             
+            Hunt
+          </th>
+          <td>
+            12/10/2021
+          </td>
+          <td>
+            PRE_INQUIRY
+          </td>
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(0, 0, 0); background-color: rgb(225, 243, 248);"
+            >
+              To do
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="row"
+        >
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(255, 255, 255); background-color: rgb(61, 69, 81);"
+            >
+              GRAY
+            </span>
+          </td>
+          <th
+            scope="row"
+          >
+            Susan
+             
+            Lee
+          </th>
+          <td>
+            12/10/2021
+          </td>
+          <td>
+            IN_PROGRESS
+          </td>
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(0, 0, 0); background-color: rgb(225, 243, 248);"
+            >
+              To do
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="row"
+        >
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(255, 255, 255); background-color: rgb(61, 69, 81);"
+            >
+              GRAY
+            </span>
+          </td>
+          <th
+            scope="row"
+          >
+            Kerry
+             
+            Smith
+          </th>
+          <td>
+            12/10/2021
+          </td>
+          <td>
+            IN_PROGRESS
+          </td>
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(0, 0, 0); background-color: rgb(225, 243, 248);"
+            >
+              To do
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="row"
+        >
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(255, 255, 255); background-color: rgb(115, 179, 231);"
+            >
+              BLUE
+            </span>
+          </td>
+          <th
+            scope="row"
+          >
+            Jessica
+             
+            Smith
+          </th>
+          <td>
+            12/9/2021
+          </td>
+          <td>
+            ZERO_INACTIVE
+          </td>
+          <td>
+            Jonathan
+          </td>
+        </tr>
+        <tr
+          class="row"
+        >
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(0, 0, 0); background-color: rgb(228, 217, 233);"
+            >
+              PURPLE
+            </span>
+          </td>
+          <th
+            scope="row"
+          >
+            Ted
+             
+            Smith
+          </th>
+          <td>
+            12/9/2021
+          </td>
+          <td>
+            ZERO_INACTIVE
+          </td>
+          <td>
+            Lisa
+          </td>
+        </tr>
+        <tr
+          class="row"
+        >
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(255, 255, 255); background-color: rgb(61, 69, 81);"
+            >
+              GRAY
+            </span>
+          </td>
+          <th
+            scope="row"
+          >
+            christopher
+             
+            swinglhurse-walters
+          </th>
+          <td>
+            12/9/2021
+          </td>
+          <td>
+            ZERO_INACTIVE
+          </td>
+          <td>
+            Susan
+          </td>
+        </tr>
+        <tr
+          class="row"
+        >
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(0, 0, 0); background-color: rgb(242, 228, 212);"
+            >
+              BROWN
+            </span>
+          </td>
+          <th
+            scope="row"
+          >
+            Susan
+             
+            Lee
+          </th>
+          <td>
+            12/8/2021
+          </td>
+          <td>
+            ZERO_INACTIVE
+          </td>
+          <td>
+            Quinn
+          </td>
+        </tr>
+        <tr
+          class="row"
+        >
+          <td>
+            <span
+              class="usa-tag"
+              data-testid="tag"
+              style="color: rgb(0, 0, 0); background-color: rgb(242, 228, 212);"
+            >
+              BROWN
+            </span>
+          </td>
+          <th
+            scope="row"
+          >
+            Kerry
+             
+            Smith
+          </th>
+          <td>
+            12/8/2021
+          </td>
+          <td>
+            ZERO_INACTIVE
+          </td>
+          <td>
+            Jo
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </main>
 </div>
 `;
