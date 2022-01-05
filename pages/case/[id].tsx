@@ -10,7 +10,8 @@ import { useCase } from "../../hooks/cases"
 const CasesPage: NextPage = () => {
   const router = useRouter()
   const { id } = router.query
-  const { data } = useCase(Number(id))
+
+  const { data } = useCase(id)
 
   return (
     <main>
@@ -21,14 +22,14 @@ const CasesPage: NextPage = () => {
           </Breadcrumb>
           <Breadcrumb current>
             <span className={styles.breadcrumbLink}>
-              {data ? `${data.person.first_name} ${data.person.last_name}` : ""}
+              {data ? `${data.subject.firstName} ${data.subject.lastName}` : ""}
             </span>
           </Breadcrumb>
         </BreadcrumbBar>
 
         <h1 className={styles.h1}>
           {data
-            ? `${data.person.first_name} ${data.person.last_name}`
+            ? `${data.subject.firstName} ${data.subject.lastName}`
             : "loading..."}
         </h1>
       </section>

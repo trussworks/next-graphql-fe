@@ -9,10 +9,10 @@ test("Test the Case Page", async ({ page }) => {
   await expect(casePage.nav).toHaveCount(1)
   await expect(casePage.breadcrumbs).toHaveCount(2)
   await expect(casePage.breadcrumbs.first()).toHaveText("Home")
-  await expect(casePage.breadcrumbs.last()).toHaveText("jason ash")
+  await expect(casePage.breadcrumbs.last()).toHaveText("Jason Ash")
 
   // Should have a title with the case subject name
-  await expect(casePage.h1).toHaveText("jason ash")
+  await expect(casePage.h1).toHaveText("Jason Ash")
 
   // Click on first breadcrumb link (Home)
   await Promise.all([

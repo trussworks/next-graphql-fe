@@ -1,6 +1,6 @@
 export enum TagColorsEnum {
-  gray = "gray",
-  blue = "blue",
-  purple = "purple",
-  brown = "brown",
+  gray = "GRAY",
+  blue = "BLUE",
+  purple = "PURPLE",
+  brown = "BROWN",
 }

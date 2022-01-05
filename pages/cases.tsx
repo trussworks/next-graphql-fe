@@ -7,6 +7,7 @@ import { useCases } from "../hooks/cases"
 import { ColorTag } from "../components/ColorTag"
 import { TagColorsEnum } from "../types/enums"
 import styles from "styles/Cases.module.scss"
+import { Case } from "types/types"
 
 const TodoTag = () => (
   <Tag style={{ color: "#000", backgroundColor: "#E1F3F8" }}>To do</Tag>
@@ -35,25 +36,23 @@ const CasesPage: NextPage = () => {
             </tr>
           </thead>
           <tbody>
-            {data.cases.map((c) => (
+            {data.allCases.map((c: Case) => (
               <tr
                 className={styles.row}
-                key={c.case_id}
+                key={c.id}
                 onClick={() => {
-                  router.push(`/case/${c.case_id}`)
+                  router.push(`/case/${c.id}`)
                 }}
               >
                 <td>
-                  <ColorTag color={c.color_code as TagColorsEnum} />
+                  <ColorTag color={c.colorCode as TagColorsEnum} />
                 </td>
                 <th scope="row">
-                  {c.person.first_name} {c.person.last_name}
+                  {c.subject.firstName} {c.subject.lastName}
                 </th>
-                <td>{c.date_received}</td>
+                <td>{new Date(c.receivedAt).toLocaleDateString()}</td>
                 <td>{c.status}</td>
-                <td>
-                  {c.int_analyst ? c.int_analyst.first_name : <TodoTag />}
-                </td>
+                <td>{c.analyst ? c.analyst.firstName : <TodoTag />}</td>
               </tr>
             ))}
           </tbody>

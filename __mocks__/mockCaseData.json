@@ -1,126 +1,142 @@
 {
   "data": {
-    "cases": [
+    "allCases": [
       {
-        "case_id": 1,
-        "color_code": "gray",
-        "date_received": "10-Dec-2021",
-        "person": {
-          "first_name": "jason",
-          "last_name": "ash"
+        "id": "1",
+        "colorCode": "GRAY",
+        "receivedAt": "2021-12-10T23:13:13+00:00",
+        "subject": {
+          "id": "1",
+          "firstName": "Jason",
+          "lastName": "Ash"
         },
-        "status": "pre-inquiry",
-        "int_analyst": null
+        "status": "PRE_INQUIRY",
+        "analyst": null
       },
       {
-        "case_id": 2,
-        "color_code": "gray",
-        "date_received": "10-Dec-2021",
-        "person": {
-          "first_name": "riley",
-          "last_name": "baker"
+        "id": "2",
+        "colorCode": "GRAY",
+        "receivedAt": "2021-12-10T23:13:36+00:00",
+        "subject": {
+          "id": "2",
+          "firstName": "Riley",
+          "lastName": "Baker"
         },
-        "status": "pre-inquiry",
-        "int_analyst": {
-          "first_name": "jonathan"
+        "status": "PRE_INQUIRY",
+        "analyst": {
+          "firstName": "Jonathan",
+          "lastName": null
         }
       },
       {
-        "case_id": 3,
-        "color_code": "blue",
-        "date_received": "10-Dec-2021",
-        "person": {
-          "first_name": "skyler",
-          "last_name": "hunt"
+        "id": "3",
+        "colorCode": "BLUE",
+        "receivedAt": "2021-12-10T23:14:47+00:00",
+        "subject": {
+          "id": "4",
+          "firstName": "Skyler",
+          "lastName": "Hunt"
         },
-        "status": "pre-inquiry",
-        "int_analyst": null
+        "status": "PRE_INQUIRY",
+        "analyst": null
       },
       {
-        "case_id": 4,
-        "color_code": "gray",
-        "date_received": "10-Dec-2021",
-        "person": {
-          "first_name": "susan",
-          "last_name": "lee"
+        "id": "4",
+        "colorCode": "GRAY",
+        "receivedAt": "2021-12-10T23:15:20+00:00",
+        "subject": {
+          "id": "5",
+          "firstName": "Susan",
+          "lastName": "Lee"
         },
-        "status": "in progress",
-        "int_analyst": null
+        "status": "IN_PROGRESS",
+        "analyst": null
       },
       {
-        "case_id": 5,
-        "color_code": "gray",
-        "date_received": "10-Dec-2021",
-        "person": {
-          "first_name": "kerry",
-          "last_name": "smith"
+        "id": "5",
+        "colorCode": "GRAY",
+        "receivedAt": "2021-12-10T23:15:59+00:00",
+        "subject": {
+          "id": "6",
+          "firstName": "Kerry",
+          "lastName": "Smith"
         },
-        "status": "in progress",
-        "int_analyst": null
+        "status": "IN_PROGRESS",
+        "analyst": null
       },
       {
-        "case_id": 6,
-        "color_code": "blue",
-        "date_received": "9-Dec-2021",
-        "person": {
-          "first_name": "jessica",
-          "last_name": "smith"
+        "id": "6",
+        "colorCode": "BLUE",
+        "receivedAt": "2021-12-09T23:16:50+00:00",
+        "subject": {
+          "id": "7",
+          "firstName": "Jessica",
+          "lastName": "Smith"
         },
-        "status": "zero - inactive",
-        "int_analyst": {
-          "first_name": "Jonathan"
+        "status": "ZERO_INACTIVE",
+        "analyst": {
+          "firstName": "Jonathan",
+          "lastName": null
         }
       },
       {
-        "case_id": 7,
-        "color_code": "purple",
-        "date_received": "9-Dec-2021",
-        "person": {
-          "first_name": "ted",
-          "last_name": "smith"
+        "id": "7",
+        "colorCode": "PURPLE",
+        "receivedAt": "2021-12-09T23:17:46+00:00",
+        "subject": {
+          "id": "8",
+          "firstName": "Ted",
+          "lastName": "Smith"
         },
-        "status": "zero - inactive",
-        "int_analyst": {
-          "first_name": "Lisa"
+        "status": "ZERO_INACTIVE",
+        "analyst": {
+          "firstName": "Lisa",
+          "lastName": null
         }
       },
       {
-        "case_id": 8,
-        "color_code": "gray",
-        "date_received": "9-Dec-2021",
-        "person": {
-          "first_name": "christopher",
-          "last_name": "swinglhurse-walters"
+        "id": "8",
+        "colorCode": "GRAY",
+        "receivedAt": "2021-12-09T23:18:47+00:00",
+        "subject": {
+          "id": "10",
+          "firstName": "christopher",
+          "lastName": "swinglhurse-walters"
         },
-        "status": "zero - inactive",
-        "int_analyst": {
-          "first_name": "Susan"
+        "status": "ZERO_INACTIVE",
+        "analyst": {
+          "firstName": "Susan",
+          "lastName": "Lee"
         }
       },
       {
-        "case_id": 9,
-        "color_code": "brown",
-        "date_received": "9-Dec-2021",
-        "person": {
-          "first_name": "susan",
-          "last_name": "lee"
+        "id": "9",
+        "colorCode": "BROWN",
+        "receivedAt": "2021-12-08T23:19:36+00:00",
+        "subject": {
+          "id": "5",
+          "firstName": "Susan",
+          "lastName": "Lee"
         },
-        "status": "zero - inactive",
-        "int_analyst": {
-          "first_name": "Quinn"
+        "status": "ZERO_INACTIVE",
+        "analyst": {
+          "firstName": "Quinn",
+          "lastName": null
         }
       },
       {
-        "case_id": 10,
-        "color_code": "brown",
-        "date_received": "8-Dec-2021",
-        "person": {
-          "first_name": "kerry",
-          "last_name": "smith"
+        "id": "10",
+        "colorCode": "BROWN",
+        "receivedAt": "2021-12-08T23:20:11+00:00",
+        "subject": {
+          "id": "6",
+          "firstName": "Kerry",
+          "lastName": "Smith"
         },
-        "status": "zero - inactive",
-        "int_analyst": {
-          "first_name": "Jo"
+        "status": "ZERO_INACTIVE",
+        "analyst": {
+          "firstName": "Jo",
+          "lastName": null
         }
       }
     ]
