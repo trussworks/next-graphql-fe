@@ -20,7 +20,17 @@ const renderWithQueryClient = (
   options?: RenderOptions<typeof optionTypes, HTMLElement>
 ): RenderResult => {
   const Wrapper: React.FC<{}> = ({ children }) => (
-    <QueryClientProvider client={new QueryClient()}>
+    <QueryClientProvider
+      client={
+        new QueryClient({
+          defaultOptions: {
+            queries: {
+              retry: false,
+            },
+          },
+        })
+      }
+    >
       {children}
     </QueryClientProvider>
   )
