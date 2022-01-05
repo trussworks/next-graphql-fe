@@ -9,14 +9,15 @@ import { TagColorsEnum } from "../types/enums"
 import styles from "styles/Cases.module.scss"
 import { Case } from "types/types"
 
+const isError = (error: unknown): error is Error => error instanceof Error
+
 const TodoTag = () => (
   <Tag style={{ color: "#000", backgroundColor: "#E1F3F8" }}>To do</Tag>
 )
 
 const CasesPage: NextPage = () => {
   const router = useRouter()
-  const { data } = useCases()
-
+  const { data, error } = useCases()
   return (
     <main className={styles.main}>
       <h1>All Alerts</h1>
@@ -24,7 +25,9 @@ const CasesPage: NextPage = () => {
         View of all alerts that are active in the system today.
       </p>
 
-      {data ? (
+      {isError(error) ? (
+        error.message
+      ) : data ? (
         <Table bordered={false} fullWidth>
           <thead>
             <tr>
