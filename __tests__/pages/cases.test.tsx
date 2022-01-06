@@ -19,19 +19,24 @@ jest.mock("next/router", () => ({
   },
 }))
 
+/** Validate the common/static header components of the cases page are displayed */
+const validateHeading = () => {
+  const h1 = screen.getByRole("heading")
+  expect(h1).toBeInTheDocument()
+  expect(h1.textContent).toMatchInlineSnapshot(`"All Alerts"`)
+
+  const subHeading = screen.getByRole("paragraph")
+  expect(subHeading).toBeInTheDocument()
+  expect(subHeading.textContent).toMatchInlineSnapshot(
+    `"View of all alerts that are active in the system today."`
+  )
+}
+
 describe("Cases Page", () => {
   it("displays page content while loading", () => {
     render(<CasesPage />)
 
-    const h1 = screen.getByRole("heading")
-    expect(h1).toBeInTheDocument()
-    expect(h1.textContent).toMatchInlineSnapshot(`"All Alerts"`)
-
-    const subHeading = screen.getByRole("paragraph")
-    expect(subHeading).toBeInTheDocument()
-    expect(subHeading.textContent).toMatchInlineSnapshot(
-      `"View of all alerts that are active in the system today."`
-    )
+    validateHeading()
 
     const loadingText = screen.getByText(/loading.../i)
     expect(loadingText).toBeInTheDocument()
@@ -48,18 +53,7 @@ describe("Cases Page", () => {
 
     render(<CasesPage />)
 
-    const h1 = screen.getByRole("heading")
-    expect(h1).toBeInTheDocument()
-    expect(h1.textContent).toMatchInlineSnapshot(`"All Alerts"`)
-
-    const subHeading = screen.getByRole("paragraph")
-    expect(subHeading).toBeInTheDocument()
-    expect(subHeading.textContent).toMatchInlineSnapshot(
-      `"View of all alerts that are active in the system today."`
-    )
-
-    const loadingText = screen.getByText(/loading.../i)
-    expect(loadingText).toBeInTheDocument()
+    validateHeading()
 
     await waitForElementToBeRemoved(() => screen.queryByText("loading..."))
 
@@ -119,18 +113,7 @@ describe("Cases Page", () => {
 
     render(<CasesPage />)
 
-    const h1 = screen.getByRole("heading")
-    expect(h1).toBeInTheDocument()
-    expect(h1.textContent).toMatchInlineSnapshot(`"All Alerts"`)
-
-    const subHeading = screen.getByRole("paragraph")
-    expect(subHeading).toBeInTheDocument()
-    expect(subHeading.textContent).toMatchInlineSnapshot(
-      `"View of all alerts that are active in the system today."`
-    )
-
-    const loadingText = screen.getByText(/loading.../i)
-    expect(loadingText).toBeInTheDocument()
+    validateHeading()
 
     await waitForElementToBeRemoved(() => screen.queryByText("loading..."))
 

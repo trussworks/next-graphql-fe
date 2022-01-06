@@ -14,6 +14,17 @@ const mockSuccessResponse = JSON.stringify({
   },
 })
 
+/** Renders the Hello oPage and waits for the loading message to be removed */
+const renderLoaded = async () => {
+  // render page
+  const renderResult = render(<HelloPage />)
+
+  // wait to finish loading
+  await waitForElementToBeRemoved(() => screen.queryByText("loading..."))
+
+  return renderResult
+}
+
 describe("Hello Page", () => {
   it("shows loading message", () => {
     render(<HelloPage />)
@@ -32,13 +43,7 @@ describe("Hello Page", () => {
   it("displays fetched data", async () => {
     fetchMock.mockResponseOnce(mockSuccessResponse)
 
-    render(<HelloPage />)
-
-    // shows loading
-    expect(screen.getByText("loading...")).toBeInTheDocument()
-
-    // wait to finish loading
-    await waitForElementToBeRemoved(() => screen.queryByText("loading..."))
+    await renderLoaded()
 
     // now shows retrived message
     expect(await screen.findByText("Hello World!")).toBeInTheDocument()
@@ -47,8 +52,7 @@ describe("Hello Page", () => {
   it("matches snapshot with fetched data", async () => {
     fetchMock.mockResponseOnce(mockSuccessResponse)
 
-    const { container } = render(<HelloPage />)
-    await waitForElementToBeRemoved(() => screen.queryByText("loading..."))
+    const { container } = await renderLoaded()
 
     expect(container).toMatchSnapshot()
   })
@@ -56,23 +60,16 @@ describe("Hello Page", () => {
   it("gracefully handles fetch error and displays error message", async () => {
     fetchMock.mockRejectedValueOnce(new Error("Test Fetch Error"))
 
-    render(<HelloPage />)
+    await renderLoaded()
 
-    // shows loading
-    expect(screen.getByText("loading...")).toBeInTheDocument()
-
-    // wait to finish loading
-    await waitForElementToBeRemoved(() => screen.queryByText("loading..."))
-
-    // now shows error message
+    // shows error message
     expect(screen.getByText("Test Fetch Error")).toBeInTheDocument()
   })
 
   it("is accessiable", async () => {
     fetchMock.mockResponseOnce(mockSuccessResponse)
 
-    const { container } = render(<HelloPage />)
-    await waitForElementToBeRemoved(() => screen.queryByText("loading..."))
+    const { container } = await renderLoaded()
 
     await validateA11y(container)
   })
