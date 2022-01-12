@@ -1,6 +1,6 @@
 @import "styles/uswds";
 
-.main {
+.cases {
   padding: 2rem 4rem;
 
   h1 {
@@ -10,22 +10,22 @@
   p {
     margin: 8px 0 48px 0;
   }
-}
 
-.row {
-  cursor: pointer;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: lighten(color($theme-color-accent-cool-lighter), 2%);
-    border-color: "green";
-  }
-
-  td,
-  th {
-    background-color: inherit !important;
-    text-transform: capitalize;
+  .row {
+    cursor: pointer;
+  
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: lighten(color($theme-color-accent-cool-lighter), 2%);
+      border-color: "green";
+    }
+  
+    td,
+    th {
+      background-color: inherit !important;
+      text-transform: capitalize;
+    }
   }
 }
 

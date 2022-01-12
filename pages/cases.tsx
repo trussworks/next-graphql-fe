@@ -19,7 +19,7 @@ const CasesPage: NextPage = () => {
   const router = useRouter()
   const { data, error } = useCases()
   return (
-    <main className={styles.main}>
+    <main className={styles.cases}>
       <h1>All Alerts</h1>
       <p role="paragraph">
         View of all alerts that are active in the system today.
