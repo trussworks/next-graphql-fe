@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Button, GovBanner } from "@trussworks/react-uswds"
 
 import { useHello } from "../hooks/hello"
-import styles from "styles/Home.module.scss"
+import styles from "styles/home.module.scss"
 
 const isError = (error: unknown): error is Error => error instanceof Error
 
