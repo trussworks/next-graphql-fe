@@ -4,7 +4,7 @@ import { useRouter } from "next/router"
 import Link from "next/link"
 import { BreadcrumbBar, Breadcrumb } from "@trussworks/react-uswds"
 
-import styles from "styles/Case.module.scss"
+import styles from "styles/case.module.scss"
 import { useCase } from "../../hooks/cases"
 
 const CasesPage: NextPage = () => {
@@ -14,25 +14,25 @@ const CasesPage: NextPage = () => {
   const { data } = useCase(id)
 
   return (
-    <main>
-      <section className={styles.section}>
-        <BreadcrumbBar className={styles.breadcrumbBar}>
-          <Breadcrumb className={styles.link}>
+    <main className={styles.case}>
+      <header>
+        <BreadcrumbBar className={styles.breadcrumbs}>
+          <Breadcrumb>
             <Link href="/cases">Home</Link>
           </Breadcrumb>
           <Breadcrumb current>
-            <span className={styles.breadcrumbLink}>
+            <span className={styles.name}>
               {data ? `${data.subject.firstName} ${data.subject.lastName}` : ""}
             </span>
           </Breadcrumb>
         </BreadcrumbBar>
 
-        <h1 className={styles.h1}>
+        <h1 className={styles.name}>
           {data
             ? `${data.subject.firstName} ${data.subject.lastName}`
             : "loading..."}
         </h1>
-      </section>
+      </header>
     </main>
   )
 }
