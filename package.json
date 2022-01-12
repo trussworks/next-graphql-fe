@@ -16,13 +16,13 @@
     "stop": "docker-compose stop nextjs"
   },
   "dependencies": {
-    "@trussworks/react-uswds": "^2.4.1",
+    "@trussworks/react-uswds": "2.4.1",
     "next": "12.0.6",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-query": "^3.34.0",
     "sass": "^1.45.0",
-    "uswds": "^2.12.2"
+    "uswds": "2.11.2"
   },
   "devDependencies": {
     "@playwright/test": "1.17.0-next-alpha-nov-5-2021",
