@@ -1,3 +1,5 @@
+@import "styles/uswds";
+
 .main {
   padding: 2rem 4rem;
 
@@ -9,13 +11,14 @@
     margin: 8px 0 48px 0;
   }
 }
+
 .row {
   cursor: pointer;
 
   &:hover,
   &:focus,
   &:active {
-    background-color: #e7f6f8;
+    background-color: lighten(color($theme-color-accent-cool-lighter), 2%);
     border-color: "green";
   }
 
@@ -24,4 +27,9 @@
     background-color: inherit !important;
     text-transform: capitalize;
   }
+}
+
+.todo {
+  color: #000000; 
+  @include u-bg($theme-color-accent-cool-lighter);
 }
