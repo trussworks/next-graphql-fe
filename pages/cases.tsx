@@ -4,7 +4,7 @@ import { useRouter } from "next/router"
 import { Table, Tag } from "@trussworks/react-uswds"
 
 import { useCases } from "../hooks/cases"
-import { ColorTag } from "../components/ColorTag"
+import { ColorTag } from "../components/ColorTag/ColorTag"
 import { TagColorsEnum } from "../types/enums"
 import styles from "styles/Cases.module.scss"
 import { Case } from "types/types"
