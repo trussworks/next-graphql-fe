@@ -19,7 +19,7 @@ const LoginPage: NextPage = () => {
   const [showPassword, setShowPassword] = React.useState(false)
 
   return (
-    <main className={styles.main}>
+    <main className={styles.login}>
       <Form
         large
         onSubmit={(e) => {

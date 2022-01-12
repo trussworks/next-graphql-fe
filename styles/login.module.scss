@@ -1,4 +1,4 @@
-.main {
+.login {
   min-height: calc(100vh - 4rem);
   padding: 4rem 0;
   flex: 1;
@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   form {
     min-width: 300px;
   }
