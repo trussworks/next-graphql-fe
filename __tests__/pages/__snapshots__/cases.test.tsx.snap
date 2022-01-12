@@ -70,9 +70,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
         >
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag gray"
               data-testid="tag"
-              style="color: rgb(255, 255, 255); background-color: rgb(61, 69, 81);"
             >
               GRAY
             </span>
@@ -105,9 +104,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
         >
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag gray"
               data-testid="tag"
-              style="color: rgb(255, 255, 255); background-color: rgb(61, 69, 81);"
             >
               GRAY
             </span>
@@ -134,9 +132,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
         >
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag blue"
               data-testid="tag"
-              style="color: rgb(255, 255, 255); background-color: rgb(115, 179, 231);"
             >
               BLUE
             </span>
@@ -169,9 +166,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
         >
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag gray"
               data-testid="tag"
-              style="color: rgb(255, 255, 255); background-color: rgb(61, 69, 81);"
             >
               GRAY
             </span>
@@ -204,9 +200,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
         >
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag gray"
               data-testid="tag"
-              style="color: rgb(255, 255, 255); background-color: rgb(61, 69, 81);"
             >
               GRAY
             </span>
@@ -239,9 +234,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
         >
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag blue"
               data-testid="tag"
-              style="color: rgb(255, 255, 255); background-color: rgb(115, 179, 231);"
             >
               BLUE
             </span>
@@ -268,9 +262,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
         >
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag purple"
               data-testid="tag"
-              style="color: rgb(0, 0, 0); background-color: rgb(228, 217, 233);"
             >
               PURPLE
             </span>
@@ -297,9 +290,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
         >
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag gray"
               data-testid="tag"
-              style="color: rgb(255, 255, 255); background-color: rgb(61, 69, 81);"
             >
               GRAY
             </span>
@@ -326,9 +318,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
         >
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag brown"
               data-testid="tag"
-              style="color: rgb(0, 0, 0); background-color: rgb(242, 228, 212);"
             >
               BROWN
             </span>
@@ -355,9 +346,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
         >
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag brown"
               data-testid="tag"
-              style="color: rgb(0, 0, 0); background-color: rgb(242, 228, 212);"
             >
               BROWN
             </span>

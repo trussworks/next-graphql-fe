@@ -3,9 +3,8 @@
 exports[`Color Tag matches snapshot 1`] = `
 <div>
   <span
-    class="usa-tag"
+    class="usa-tag blue"
     data-testid="tag"
-    style="color: rgb(255, 255, 255); background-color: rgb(115, 179, 231);"
   >
     BLUE
   </span>

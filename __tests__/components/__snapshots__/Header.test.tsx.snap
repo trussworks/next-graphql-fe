@@ -22,7 +22,6 @@ exports[`Header matches snapshot with user 1`] = `
       Test User
     </a>
     <a
-      class="signout"
       href="/login"
     >
       Sign out
@@ -53,7 +52,6 @@ exports[`Header matches snapshot without user 1`] = `
       Test User
     </a>
     <a
-      class="signout"
       href="/login"
     >
       Sign out
