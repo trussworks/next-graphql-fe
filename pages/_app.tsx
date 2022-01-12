@@ -1,15 +1,12 @@
 import { useState } from "react"
-import "../styles/globals.scss"
+import "../styles/index.scss"
 import Head from "next/head"
 import type { AppProps } from "next/app"
 import { QueryClient, QueryClientProvider } from "react-query"
 import { ReactQueryDevtools } from "react-query/devtools"
 
-import "@trussworks/react-uswds/lib/uswds.css" // TODO: Should be getting this from USWDS
-import "@trussworks/react-uswds/lib/index.css"
-
 import { UserProvider } from "hooks/user"
-import { Header } from "components/Header"
+import { Header } from "@/components/Header/Header"
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [queryClient] = useState(

@@ -1,0 +1,16 @@
+@import "styles/uswds";
+
+.case {
+  header {
+    padding: 0 4rem;
+    @include u-bg($theme-color-base-lightest);
+
+    .breadcrumbs {
+      background-color: inherit;
+    }
+  }
+
+  .name {
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,12 @@
+/** Base CSS for SITH Finder **/
+
+// ReactUSWDS CSS modules
+@import '@trussworks/react-uswds/lib/index.css';
+
+// USWDS dependencies & overrides
+@import './uswds';
+
+// USWDS SCSS
+@import 'node_modules/uswds/dist/scss/uswds.scss';
+
+// Global, app-wide styles

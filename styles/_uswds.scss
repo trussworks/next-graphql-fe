@@ -1,0 +1,14 @@
+/** Import this file to use USWDS variables and mixins **/
+
+// USWDS dependencies
+@import 'node_modules/uswds/src/stylesheets/theme/_uswds-theme-general.scss';
+@import 'node_modules/uswds/src/stylesheets/theme/_uswds-theme-typography.scss';
+@import 'node_modules/uswds/src/stylesheets/theme/_uswds-theme-spacing.scss';
+@import 'node_modules/uswds/src/stylesheets/theme/_uswds-theme-color.scss';
+@import 'node_modules/uswds/src/stylesheets/theme/_uswds-theme-utilities.scss';
+
+// SITH USWDS custom theme settings & overrides
+@import './settings';
+
+// USWDS required values
+@import 'node_modules/uswds/src/stylesheets/packages/_required.scss';

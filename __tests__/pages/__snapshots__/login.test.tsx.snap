@@ -3,7 +3,7 @@
 exports[`Login Page matches snapshot 1`] = `
 <div>
   <main
-    class="main"
+    class="login"
   >
     <form
       class="usa-form usa-form--large form"

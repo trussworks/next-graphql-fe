@@ -3,7 +3,7 @@ import {
   renderWithQueryClient as render,
   validateA11y,
 } from "../../utils/test-utils"
-import { ColorTag } from "../../components/ColorTag"
+import { ColorTag } from "../../components/ColorTag/ColorTag"
 import { TagColorsEnum } from "../../types/enums"
 
 describe("Color Tag", () => {

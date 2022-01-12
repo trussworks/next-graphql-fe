@@ -3,7 +3,7 @@ import {
   renderWithQueryClient as render,
   validateA11y,
 } from "../../utils/test-utils"
-import { Header } from "../../components/Header"
+import { Header } from "../../components/Header/Header"
 import * as hooks from "../../hooks/user"
 import { findByRole } from "@testing-library/react"
 

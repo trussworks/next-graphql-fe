@@ -1,0 +1,22 @@
+/** USWDS settings and overrides **/
+
+/* GENERAL */
+// Set these to true to view USWDS CSS compile warnings (reduces noise in the logs)
+$theme-show-compile-warnings: false;
+$theme-show-notifications: false;
+
+// Asset paths - currently relative to 'node_modules/uswds/dist/scss/uswds.scss'
+// MUST be set to compile
+$theme-font-path: '../../../fonts';
+$theme-image-path: '../../../img';
+$theme-hero-image: '../../img/hero.png';
+
+/* TYPOGRAPHY */
+$theme-respect-user-font-size: false;
+$theme-root-font-size: 16px;
+
+/* SPACING */
+
+/* COMPONENTS */
+
+/* THEME */

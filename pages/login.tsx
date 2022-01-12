@@ -10,7 +10,7 @@ import {
 } from "@trussworks/react-uswds"
 
 import { useUser } from "../hooks/user"
-import styles from "styles/Login.module.scss"
+import styles from "styles/login.module.scss"
 
 const LoginPage: NextPage = () => {
   const router = useRouter()
@@ -19,7 +19,7 @@ const LoginPage: NextPage = () => {
   const [showPassword, setShowPassword] = React.useState(false)
 
   return (
-    <main className={styles.main}>
+    <main className={styles.login}>
       <Form
         large
         onSubmit={(e) => {
