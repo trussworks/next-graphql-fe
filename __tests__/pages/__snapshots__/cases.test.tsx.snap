@@ -3,7 +3,7 @@
 exports[`Cases Page matches snapshot while loading 1`] = `
 <div>
   <main
-    class="main"
+    class="cases"
   >
     <h1>
       All Alerts
@@ -21,7 +21,7 @@ exports[`Cases Page matches snapshot while loading 1`] = `
 exports[`Cases Page matches snapshot with fetched data 1`] = `
 <div>
   <main
-    class="main"
+    class="cases"
   >
     <h1>
       All Alerts
@@ -91,9 +91,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
           </td>
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag todo"
               data-testid="tag"
-              style="color: rgb(0, 0, 0); background-color: rgb(225, 243, 248);"
             >
               To do
             </span>
@@ -153,9 +152,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
           </td>
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag todo"
               data-testid="tag"
-              style="color: rgb(0, 0, 0); background-color: rgb(225, 243, 248);"
             >
               To do
             </span>
@@ -187,9 +185,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
           </td>
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag todo"
               data-testid="tag"
-              style="color: rgb(0, 0, 0); background-color: rgb(225, 243, 248);"
             >
               To do
             </span>
@@ -221,9 +218,8 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
           </td>
           <td>
             <span
-              class="usa-tag"
+              class="usa-tag todo"
               data-testid="tag"
-              style="color: rgb(0, 0, 0); background-color: rgb(225, 243, 248);"
             >
               To do
             </span>

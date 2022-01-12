@@ -2,19 +2,19 @@
 
 exports[`Case Page matches snapshot while loading 1`] = `
 <div>
-  <main>
-    <section
-      class="section"
-    >
+  <main
+    class="case"
+  >
+    <header>
       <nav
         aria-label="Breadcrumbs"
-        class="usa-breadcrumb breadcrumbBar"
+        class="usa-breadcrumb breadcrumbs"
       >
         <ol
           class="usa-breadcrumb__list"
         >
           <li
-            class="usa-breadcrumb__list-item link"
+            class="usa-breadcrumb__list-item"
           >
             <a
               href="/cases"
@@ -27,17 +27,17 @@ exports[`Case Page matches snapshot while loading 1`] = `
             class="usa-breadcrumb__list-item usa-current"
           >
             <span
-              class="breadcrumbLink"
+              class="name"
             />
           </li>
         </ol>
       </nav>
       <h1
-        class="h1"
+        class="name"
       >
         loading...
       </h1>
-    </section>
+    </header>
   </main>
 </div>
 `;
