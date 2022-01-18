@@ -93,6 +93,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 The following have been identified as improvements that would add value to the repo:
 
+- Remove references to 'SITH', make generic
 - Examples of all CRUD operations (currently only reads data from BE)
 - Use **root** relative imports rather than file relative imports (no more `../..`)
 - Project/Folder structure improvements:
