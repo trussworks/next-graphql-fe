@@ -95,10 +95,6 @@ The following have been identified as improvements that would add value to the r
 
 - Remove references to 'SITH', make generic
 - Examples of all CRUD operations (currently only reads data from BE)
-- Use **root** relative imports rather than file relative imports (no more `../..`)
-- Project/Folder structure improvements:
-  - Use a `src` dir
-  - Co-locate component unit tests with components themselves
 - Playwright:
   - Collect code coverage from Playwright e2e tests
   - Combine Playwright and Jest code coverage into a single report
