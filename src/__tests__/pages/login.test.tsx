@@ -1,12 +1,9 @@
 import React from "react"
 import * as routingHooks from "next/router"
 import { fireEvent, screen } from "@testing-library/react"
-import {
-  renderWithQueryClient as render,
-  validateA11y,
-} from "../../utils/test-utils"
-import LoginPage from "../../pages/login"
-import * as userHooks from "../../hooks/user"
+import { renderWithQueryClient as render, validateA11y } from "utils/test-utils"
+import LoginPage from "pages/login"
+import * as userHooks from "hooks/user"
 
 const mockRoutingPush = jest.fn()
 jest.mock("next/router", () => ({

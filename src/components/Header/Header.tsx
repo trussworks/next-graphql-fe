@@ -4,7 +4,7 @@ import { Header as UswdsHeader } from "@trussworks/react-uswds"
 
 import styles from "./Header.module.scss"
 
-import { useUser } from "../../hooks/user"
+import { useUser } from "hooks/user"
 
 const Header = () => {
   const { user } = useUser()
@@ -19,9 +19,7 @@ const Header = () => {
         </Link>
       ) : null}
       <Link href="/login" key="logout-header-link">
-        <a>
-          {user && user.length ? "Sign out" : "Sign in"}
-        </a>
+        <a>{user && user.length ? "Sign out" : "Sign in"}</a>
       </Link>
     </UswdsHeader>
   )

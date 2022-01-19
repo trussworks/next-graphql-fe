@@ -1,11 +1,8 @@
 import React from "react"
 import { axe } from "jest-axe"
 
-import {
-  renderWithQueryClient as render,
-  validateA11y,
-} from "../../utils/test-utils"
-import Home from "../../pages/index"
+import { renderWithQueryClient as render, validateA11y } from "utils/test-utils"
+import Home from "pages/index"
 
 describe("Home", () => {
   it("matches snapshot", () => {

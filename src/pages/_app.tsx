@@ -1,12 +1,12 @@
 import { useState } from "react"
-import "../styles/index.scss"
+import "styles/index.scss"
 import Head from "next/head"
 import type { AppProps } from "next/app"
 import { QueryClient, QueryClientProvider } from "react-query"
 import { ReactQueryDevtools } from "react-query/devtools"
 
 import { UserProvider } from "hooks/user"
-import { Header } from "@/components/Header/Header"
+import { Header } from "components/Header/Header"
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [queryClient] = useState(

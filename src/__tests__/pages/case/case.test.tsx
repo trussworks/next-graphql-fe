@@ -1,10 +1,7 @@
 import React from "react"
 import { screen } from "@testing-library/react"
-import {
-  renderWithQueryClient as render,
-  validateA11y,
-} from "../../../utils/test-utils"
-import CasePage from "../../../pages/case/[id]"
+import { renderWithQueryClient as render, validateA11y } from "utils/test-utils"
+import CasePage from "pages/case/[id]"
 
 jest.mock("next/router", () => ({
   useRouter() {

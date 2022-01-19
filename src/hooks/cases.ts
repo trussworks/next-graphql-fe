@@ -1,6 +1,6 @@
 import { useQuery } from "react-query"
-import { graphClient } from "../utils/graph-client"
-import mockCaseData from "../__mocks__/mockCaseData.json"
+import { graphClient } from "utils/graph-client"
+import mockCaseData from "__mocks__/mockCaseData.json"
 
 const CASE = "case"
 const CASES = "cases"
