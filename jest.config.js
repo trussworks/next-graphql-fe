@@ -8,7 +8,6 @@ module.exports = {
     "!**/lcov-report/**",
     "!**/*.config.js",
   ],
-  moduleDirectories: ["node_modules", "src"],
   moduleNameMapper: {
     /* Handle CSS imports (with CSS modules)
     https://jestjs.io/docs/webpack#mocking-css-modules */
@@ -21,6 +20,8 @@ module.exports = {
     https://jestjs.io/docs/webpack#handling-static-assets */
     "^.+\\.(jpg|jpeg|png|gif|webp|avif|svg)$":
       "<rootDir>/__mocks__/fileMock.js",
+
+    "^@/components/(.*)$": "<rootDir>/components/$1",
   },
   testPathIgnorePatterns: [
     "<rootDir>/node_modules/",

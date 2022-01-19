@@ -2,8 +2,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-This application is dependent on data fetched from the GraphQL endpoint specified by the `NEXT_PUBLIC_API_URL` env variable. The Django/Graphene server made to pair with this repo can be found here: [https://github.com/trussworks/django-graphql-be](https://github.com/trussworks/django-graphql-be).
-
 ### Run on Host Machine
 
 For development, the application can be run on your host machine using:
@@ -88,18 +86,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## Next Steps
-
-The following have been identified as improvements that would add value to the repo:
-
-- Remove references to 'SITH', make generic
-- Examples of all CRUD operations (currently only reads data from BE)
-- Playwright:
-  - Collect code coverage from Playwright e2e tests
-  - Combine Playwright and Jest code coverage into a single report
-  - Add Playwright visual regression (screenshot) testing
-  - Add more/better Playwright scripts to allow running single tests easily
-- Add OpenTelemetry instrumentation
-- Error handling using [Error Boundaries](https://reactjs.org/docs/error-boundaries.html)
-- Add Feature Flag use/patterns (LaunchDarkly?)
