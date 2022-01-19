@@ -1,5 +1,5 @@
 import { useQuery } from "react-query"
-import { graphClient } from "../utils/graph-client"
+import { graphClient } from "utils/graph-client"
 
 const HELLO = "hello"
 const QUERY_HELLO = `query {hello}`

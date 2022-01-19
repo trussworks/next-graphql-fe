@@ -2,11 +2,8 @@ import React from "react"
 import { screen, waitForElementToBeRemoved } from "@testing-library/react"
 import fetchMock from "jest-fetch-mock"
 
-import {
-  renderWithQueryClient as render,
-  validateA11y,
-} from "../../utils/test-utils"
-import HelloPage from "../../pages/hello"
+import { renderWithQueryClient as render, validateA11y } from "utils/test-utils"
+import HelloPage from "pages/hello"
 
 const mockSuccessResponse = JSON.stringify({
   data: {
