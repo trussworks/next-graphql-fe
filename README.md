@@ -99,7 +99,6 @@ The following have been identified as improvements that would add value to the r
   - Collect code coverage from Playwright e2e tests
   - Combine Playwright and Jest code coverage into a single report
   - Add Playwright visual regression (screenshot) testing
-  - Add more/better Playwright scripts to allow running single tests easily
 - Add OpenTelemetry instrumentation
 - Error handling using [Error Boundaries](https://reactjs.org/docs/error-boundaries.html)
 - Add Feature Flag use/patterns (LaunchDarkly?)

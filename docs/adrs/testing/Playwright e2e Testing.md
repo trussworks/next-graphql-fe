@@ -4,13 +4,40 @@
 
 ## Run Tests
 
-`yarn e2e`
+Before running e2e tests, both the frontend and backend must be running. The playwright tests will need the address of the frontend to be tested. This is set using the `PLAYWRIGHT_URL` env variable. The default is set to `http://localhost:3000` in the package.json scripts.
 
-Before running e2e tests, both the frontend and backend must be running. The playwright tests will need the address of the frontend to be tested. This is set using the `PLAYWRIGHT_URL` env variable. The default to is set to `http://localhost:3000` in the package.json scripts.
+### All Tests
+
+`yarn e2e` - Run all tests in all browsers as configured by the `playwright.config.ts` file
+
+### Single Test
+
+`yarn e2e test-name` - Run test(s) that at least partially match with the provided test name.
+
+### Multiple tests
+
+`yarn e2e <path-to-tests>` - Run all test that are within the provided path
+
+### Single Browser
+
+`yarn e2e:chrome` - Run all tests in only the chrome browser, can accept test file/path to run specific tests.
+
+### Test Options
+
+There are several options available to configure test running, the most useful are:
+
+- `--debug` - Run tests using the Playwright Inspector, see [Debug Tests](#debug-tests)
+- `--project` - Set the browser for the test run. Very useful in development and debugging to run tests in a single browser. For available project values see: https://playwright.dev/docs/test-advanced#projects
+- `--timeout` - Test timeout in milliseconds, default is 30 seconds
+- `--grep` - Run tests matching a regular expression
+
+A complete list of options can be found in the Playwright documentation [here](https://playwright.dev/docs/test-cli#reference).
+
+**Note:** All of the above methods of running tests and test options can be combined to allow running of specific tests in desired fashion. For example, to run all tests with the word `home` in the test name, in debug mode with only on only the Chrome browser: `yarn e2e:chrome home --debug`
 
 ## Debug Tests
 
-`yarn e2e:debug`
+`yarn e2e --debug`
 
 Launches a headed browser (for each test) in debug mode allowing you to step through tests. In debug mode, the [Playwright inspector](https://playwright.dev/docs/inspector) is launched and each test is paused at the very beginning. Then, you can step through the tests and watch what occurs in the browser as the test progresses.
 
@@ -20,7 +47,7 @@ You can click `Explore` while paused in a test to select elements on the page. P
 
 ![](blob:https://truss-dds.atlassian.net/7ddde607-7722-4ff9-ba16-00a9b6daa9fa)
 
-In addition to the inspector and debug mode, Playwright also has a trace viewer and other debugging tools, see: [![](https://playwright.dev/img/playwright-logo.svg)Debugging tools | Playwright](https://playwright.dev/docs/debug).
+In addition to the inspector and debug mode, Playwright also has a trace viewer and other debugging tools, see: [Debugging tools | Playwright](https://playwright.dev/docs/debug).
 
 ## Writing Tests
 
