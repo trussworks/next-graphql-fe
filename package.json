@@ -16,7 +16,7 @@
     "stop": "docker-compose stop nextjs"
   },
   "dependencies": {
-    "@trussworks/react-uswds": "2.4.1",
+    "@trussworks/react-uswds": "2.7.0",
     "next": "12.0.6",
     "react": "17.0.2",
     "react-dom": "17.0.2",
