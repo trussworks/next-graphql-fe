@@ -5,8 +5,8 @@ test("Test index page using Page Object Model pattern", async ({ page }) => {
   const indexPage = new IndexPage(page)
   await indexPage.goto()
 
-  await expect(indexPage.page).toHaveTitle("SITH Front-End")
-  await expect(indexPage.h1).toHaveText("Welcome to the SITH Front-End")
+  await expect(indexPage.page).toHaveTitle("Next Front-End")
+  await expect(indexPage.h1).toHaveText("Welcome to the Next Front-End")
   await expect(indexPage.description).toHaveText(
     "Get started by editing pages/index.tsx"
   )

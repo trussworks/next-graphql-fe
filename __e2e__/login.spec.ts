@@ -5,7 +5,7 @@ test("Test the Login Page", async ({ page }) => {
   const loginPage = new LoginPage(page)
   await loginPage.goto()
 
-  await expect(loginPage.page).toHaveTitle("SITH Front-End")
+  await expect(loginPage.page).toHaveTitle("Next Front-End")
   await expect(loginPage.legend).toHaveText("Sign In")
 
   // Form inputs are present

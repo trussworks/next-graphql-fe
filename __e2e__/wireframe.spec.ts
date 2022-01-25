@@ -7,7 +7,7 @@ test("Test flow of the wireframe across multiple pages", async ({ page }) => {
   const loginPage = new LoginPage(page)
   await loginPage.goto()
 
-  await expect(loginPage.page).toHaveTitle("SITH Front-End")
+  await expect(loginPage.page).toHaveTitle("Next Front-End")
   await expect(loginPage.legend).toHaveText("Sign In")
 
   await loginPage.login()
@@ -46,6 +46,6 @@ test("Test flow of the wireframe across multiple pages", async ({ page }) => {
   // Should be back on login page
   await expect(page.url()).toContain("/login")
 
-  await expect(loginPage.page).toHaveTitle("SITH Front-End")
+  await expect(loginPage.page).toHaveTitle("Next Front-End")
   await expect(loginPage.legend).toHaveText("Sign In")
 })

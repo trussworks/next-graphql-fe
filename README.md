@@ -9,6 +9,7 @@ This application is dependent on data fetched from the GraphQL endpoint specifie
 For development, the application can be run on your host machine using:
 
 ```bash
+yarn install
 yarn dev
 ```
 
@@ -93,7 +94,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 The following have been identified as improvements that would add value to the repo:
 
-- Remove references to 'SITH', make generic
 - Examples of all CRUD operations (currently only reads data from BE)
 - Playwright:
   - Collect code coverage from Playwright e2e tests

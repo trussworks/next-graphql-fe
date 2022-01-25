@@ -7,7 +7,7 @@ describe("Header", () => {
   it("renders correctly without a user", () => {
     const { getByText, queryByText, getByAltText } = render(<Header />)
 
-    expect(getByAltText(/sith finder/i)).toBeInTheDocument()
+    expect(getByAltText(/next finder/i)).toBeInTheDocument()
 
     expect(queryByText(/sign out/i)).not.toBeInTheDocument()
     expect(getByText(/sign in/i)).toBeInTheDocument()
@@ -20,7 +20,7 @@ describe("Header", () => {
 
     const { getByText, queryByText, getByAltText } = render(<Header />)
 
-    expect(getByAltText(/sith finder/i)).toBeInTheDocument()
+    expect(getByAltText(/next finder/i)).toBeInTheDocument()
 
     expect(getByText(/test user/i)).toBeInTheDocument()
     expect(getByText(/sign out/i)).toBeInTheDocument()

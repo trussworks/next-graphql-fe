@@ -7,7 +7,7 @@ exports[`Header matches snapshot with user 1`] = `
     data-testid="header"
   >
     <img
-      alt="Sith Finder"
+      alt="Next Finder"
       height="27"
       src="/temp_logo.png"
       width="189"
@@ -37,7 +37,7 @@ exports[`Header matches snapshot without user 1`] = `
     data-testid="header"
   >
     <img
-      alt="Sith Finder"
+      alt="Next Finder"
       height="27"
       src="/temp_logo.png"
       width="189"

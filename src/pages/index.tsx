@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to the SITH Front-End</h1>
+        <h1 className={styles.title}>Welcome to the Next Front-End</h1>
 
         <p className={styles.description}>
           Get started by editing{" "}

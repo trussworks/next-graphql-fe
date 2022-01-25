@@ -1,5 +1,5 @@
 {
-  "name": "sith-fe",
+  "name": "next-graphql-fe",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -7,7 +7,7 @@ test("Test the hello test page using Page Object Model pattern", async ({
   const helloPage = new HelloPage(page)
   await helloPage.goto()
 
-  await expect(helloPage.page).toHaveTitle("SITH Front-End")
+  await expect(helloPage.page).toHaveTitle("Next Front-End")
   await expect(helloPage.h1).toHaveText("Hello, welcome to the test page")
   await expect(helloPage.description).toContainText(
     "Greeting from the Backend:"
