@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest && PLAYWRIGHT_URL=http://localhost:3000 playwright test",
+    "test": "yarn unit && yarn e2e",
     "unit": "jest",
     "unit:watch": "jest --watch",
     "coverage": "jest --coverage",
