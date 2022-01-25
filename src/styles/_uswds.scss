@@ -8,6 +8,7 @@
 @import 'node_modules/uswds/src/stylesheets/theme/_uswds-theme-utilities.scss';
 
 // USWDS custom theme settings & overrides
+@import './settings';
 
 // USWDS required values
 @import 'node_modules/uswds/src/stylesheets/packages/_required.scss';
