@@ -5,7 +5,7 @@ import Link from "next/link"
 import { BreadcrumbBar, Breadcrumb } from "@trussworks/react-uswds"
 
 import styles from "styles/case.module.scss"
-import { useCase } from "../../hooks/cases"
+import { useCase } from "hooks/cases"
 
 const CasesPage: NextPage = () => {
   const router = useRouter()

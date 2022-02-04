@@ -1,12 +1,9 @@
 import React from "react"
 import { screen, waitForElementToBeRemoved } from "@testing-library/react"
-import {
-  renderWithQueryClient as render,
-  validateA11y,
-} from "../../utils/test-utils"
-import CasesPage from "../../pages/cases"
+import { renderWithQueryClient as render, validateA11y } from "utils/test-utils"
+import CasesPage from "pages/cases"
 
-import mockCaseData from "../../__mocks__/mockCaseData.json"
+import mockCaseData from "__mocks__/mockCaseData.json"
 
 jest.mock("next/router", () => ({
   useRouter() {
