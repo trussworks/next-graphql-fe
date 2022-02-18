@@ -2,8 +2,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-This application is dependent on data fetched from the GraphQL endpoint specified by the `NEXT_PUBLIC_API_URL` env variable. The Django/Graphene server made to pair with this repo can be found here: [https://github.com/trussworks/django-graphql-be](https://github.com/trussworks/django-graphql-be).
-
 ### Run on Host Machine
 
 For development, the application can be run on your host machine using:
