@@ -6,7 +6,7 @@ import { Table, Tag } from "@trussworks/react-uswds"
 import { useCases } from "hooks/cases"
 import { ColorTag } from "components/ColorTag/ColorTag"
 import { TagColorsEnum } from "types/enums"
-import styles from "styles/cases.module.scss"
+import styles from "styles/incidents.module.scss"
 import { Case } from "types/types"
 
 const isError = (error: unknown): error is Error => error instanceof Error
@@ -17,7 +17,7 @@ const CasesPage: NextPage = () => {
   const router = useRouter()
   const { data, error } = useCases()
   return (
-    <main className={styles.cases}>
+    <main className={styles.incidents}>
       <h1>All Alerts</h1>
       <p role="paragraph">
         View of all alerts that are active in the system today.
