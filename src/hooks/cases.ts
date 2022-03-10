@@ -1,12 +1,12 @@
 import { useQuery } from "react-query"
 import { graphClient } from "utils/graph-client"
-import mockCaseData from "__mocks__/mockCaseData.json"
+import mockIncidentData from "__mocks__/mockIncidentData.json"
 
-const CASE = "case"
-const CASES = "cases"
+const INCIDENT = "incident"
+const INCIDENTS = "incidents"
 
-const QUERY_CASES = `query {
-  allCases: allCases {
+const QUERY_INCIDENTS = `query {
+  allIncidents: allIncidents {
     id
     colorCode
     receivedAt
@@ -24,30 +24,30 @@ const QUERY_CASES = `query {
 }
 `
 
-const mockCasesQuery = () => {
-  return Promise.resolve(mockCaseData.data)
+const mockIncidentsQuery = () => {
+  return Promise.resolve(mockIncidentData.data)
 }
 
-const mockCaseQuery = (caseId?: string | string[]) => {
-  if (!caseId) return Promise.reject("No case id provided")
+const mockIncidentQuery = (incidentId?: string | string[]) => {
+  if (!incidentId) return Promise.reject("No incident id provided")
 
-  const thisCase = mockCaseData.data.allCases.filter((c) => c.id === caseId)[0]
+  const thisIncident = mockIncidentData.data.allIncidents.filter((i) => i.id === incidentId)[0]
 
-  return Promise.resolve(thisCase)
+  return Promise.resolve(thisIncident)
 }
 
 function useCases() {
   const result = useQuery({
-    queryKey: CASES,
-    queryFn: () => graphClient(QUERY_CASES),
+    queryKey: INCIDENTS,
+    queryFn: () => graphClient(QUERY_INCIDENTS),
   })
   return result
 }
 
-function useCase(caseId?: string | string[]) {
+function useCase(incidentId?: string | string[]) {
   const result = useQuery({
-    queryKey: `${CASE}-${caseId}`,
-    queryFn: () => mockCaseQuery(caseId),
+    queryKey: `${INCIDENT}-${incidentId}`,
+    queryFn: () => mockIncidentQuery(incidentId),
   })
   return result
 }

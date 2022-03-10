@@ -3,7 +3,7 @@ import { screen, waitForElementToBeRemoved } from "@testing-library/react"
 import { renderWithQueryClient as render, validateA11y } from "utils/test-utils"
 import CasesPage from "pages/cases"
 
-import mockCaseData from "__mocks__/mockCaseData.json"
+import mockIncidentData from "__mocks__/mockIncidentData.json"
 
 jest.mock("next/router", () => ({
   useRouter() {
@@ -46,7 +46,7 @@ describe("Cases Page", () => {
   })
 
   it("displays page content with fetched data", async () => {
-    fetchMock.mockResponseOnce(JSON.stringify(mockCaseData))
+    fetchMock.mockResponseOnce(JSON.stringify(mockIncidentData))
 
     render(<CasesPage />)
 
@@ -96,7 +96,7 @@ describe("Cases Page", () => {
   })
 
   it("matches snapshot with fetched data", async () => {
-    fetchMock.mockResponseOnce(JSON.stringify(mockCaseData))
+    fetchMock.mockResponseOnce(JSON.stringify(mockIncidentData))
 
     const { container } = render(<CasesPage />)
 
@@ -120,7 +120,7 @@ describe("Cases Page", () => {
   })
 
   it("is accessiable ", async () => {
-    fetchMock.mockResponseOnce(JSON.stringify(mockCaseData))
+    fetchMock.mockResponseOnce(JSON.stringify(mockIncidentData))
     const { container } = render(<CasesPage />)
 
     await waitForElementToBeRemoved(() => screen.queryByText("loading..."))
