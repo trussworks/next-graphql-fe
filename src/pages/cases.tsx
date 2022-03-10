@@ -3,7 +3,7 @@ import type { NextPage } from "next"
 import { useRouter } from "next/router"
 import { Table, Tag } from "@trussworks/react-uswds"
 
-import { useCases } from "hooks/cases"
+import { useIncidents } from "hooks/incidents"
 import { ColorTag } from "components/ColorTag/ColorTag"
 import { TagColorsEnum } from "types/enums"
 import styles from "styles/incidents.module.scss"
@@ -15,7 +15,7 @@ const TodoTag = () => <Tag className={styles.todo}>To do</Tag>
 
 const CasesPage: NextPage = () => {
   const router = useRouter()
-  const { data, error } = useCases()
+  const { data, error } = useIncidents()
   return (
     <main className={styles.incidents}>
       <h1>All Alerts</h1>

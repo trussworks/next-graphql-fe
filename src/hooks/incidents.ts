@@ -36,7 +36,7 @@ const mockIncidentQuery = (incidentId?: string | string[]) => {
   return Promise.resolve(thisIncident)
 }
 
-function useCases() {
+function useIncidents() {
   const result = useQuery({
     queryKey: INCIDENTS,
     queryFn: () => graphClient(QUERY_INCIDENTS),
@@ -44,7 +44,7 @@ function useCases() {
   return result
 }
 
-function useCase(incidentId?: string | string[]) {
+function useIncident(incidentId?: string | string[]) {
   const result = useQuery({
     queryKey: `${INCIDENT}-${incidentId}`,
     queryFn: () => mockIncidentQuery(incidentId),
@@ -52,4 +52,4 @@ function useCase(incidentId?: string | string[]) {
   return result
 }
 
-export { useCases, useCase }
+export { useIncidents, useIncident }
