@@ -2,7 +2,7 @@ import { Locator, Page } from "@playwright/test"
 
 const apiURL = process.env.PLAYWRIGHT_URL
 
-export class CasePage {
+export class IncidentPage {
   readonly page: Page
   readonly nav: Locator
   readonly breadcrumbs: Locator
