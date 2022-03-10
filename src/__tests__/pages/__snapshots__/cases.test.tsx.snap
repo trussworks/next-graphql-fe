@@ -3,7 +3,7 @@
 exports[`Cases Page matches snapshot while loading 1`] = `
 <div>
   <main
-    class="cases"
+    class="incidents"
   >
     <h1>
       All Alerts
@@ -21,7 +21,7 @@ exports[`Cases Page matches snapshot while loading 1`] = `
 exports[`Cases Page matches snapshot with fetched data 1`] = `
 <div>
   <main
-    class="cases"
+    class="incidents"
   >
     <h1>
       All Alerts
@@ -55,7 +55,7 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
           <th
             scope="col"
           >
-            Case status
+            Status
           </th>
           <th
             scope="col"

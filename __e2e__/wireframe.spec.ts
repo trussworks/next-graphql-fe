@@ -27,8 +27,8 @@ test("Test flow of the wireframe across multiple pages", async ({ page }) => {
     page.waitForNavigation(),
   ])
 
-  // Should be on '/case/<caseID>' page after clicking a row
-  await expect(page.url()).toContain("/case/1")
+  // Should be on '/incidents/<incidentID>' page after clicking a row
+  await expect(page.url()).toContain("/incidents/1")
   const casePage = new CasePage(page)
 
   // Should have a breadcrumb

@@ -73,7 +73,7 @@ describe("Cases Page", () => {
     ).toBeInTheDocument()
     expect(
       screen.getByRole("columnheader", {
-        name: /case status/i,
+        name: /status/i,
       })
     ).toBeInTheDocument()
     expect(

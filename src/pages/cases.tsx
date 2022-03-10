@@ -32,28 +32,28 @@ const CasesPage: NextPage = () => {
               <th scope="col">Color Code</th>
               <th scope="col">Name</th>
               <th scope="col">Date received</th>
-              <th scope="col">Case status</th>
+              <th scope="col">Status</th>
               <th scope="col">InT Analyst Assigned</th>
             </tr>
           </thead>
           <tbody>
-            {data.allCases.map((c: Incident) => (
+            {data.allIncidents.map((i: Incident) => (
               <tr
                 className={styles.row}
-                key={c.id}
+                key={i.id}
                 onClick={() => {
-                  router.push(`/case/${c.id}`)
+                  router.push(`/incidents/${i.id}`)
                 }}
               >
                 <td>
-                  <ColorTag color={c.colorCode as TagColorsEnum} />
+                  <ColorTag color={i.colorCode as TagColorsEnum} />
                 </td>
                 <th scope="row">
-                  {c.subject.firstName} {c.subject.lastName}
+                  {i.subject.firstName} {i.subject.lastName}
                 </th>
-                <td>{new Date(c.receivedAt).toLocaleDateString()}</td>
-                <td>{c.status}</td>
-                <td>{c.analyst ? c.analyst.firstName : <TodoTag />}</td>
+                <td>{new Date(i.receivedAt).toLocaleDateString()}</td>
+                <td>{i.status}</td>
+                <td>{i.analyst ? i.analyst.firstName : <TodoTag />}</td>
               </tr>
             ))}
           </tbody>

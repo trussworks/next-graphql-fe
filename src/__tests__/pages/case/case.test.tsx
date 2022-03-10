@@ -1,15 +1,15 @@
 import React from "react"
 import { screen } from "@testing-library/react"
 import { renderWithQueryClient as render, validateA11y } from "utils/test-utils"
-import CasePage from "pages/case/[id]"
+import CasePage from "pages/incidents/[id]"
 
 jest.mock("next/router", () => ({
   useRouter() {
     return {
-      route: "/case/[id]",
-      pathname: "/case/[id]",
+      route: "/incidents/[id]",
+      pathname: "/incidents/[id]",
       query: { id: 1 },
-      asPath: "/case/1",
+      asPath: "/incidents/1",
     }
   },
 }))

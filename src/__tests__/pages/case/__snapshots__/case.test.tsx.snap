@@ -3,7 +3,7 @@
 exports[`Case Page matches snapshot while loading 1`] = `
 <div>
   <main
-    class="case"
+    class="incident"
   >
     <header>
       <nav
