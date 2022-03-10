@@ -1,6 +1,6 @@
 import { TagColorsEnum } from "./enums"
 
-export type Case = {
+export type Incident = {
   id: React.Key
   colorCode: TagColorsEnum
   subject: {

@@ -7,7 +7,7 @@ import { useCases } from "hooks/cases"
 import { ColorTag } from "components/ColorTag/ColorTag"
 import { TagColorsEnum } from "types/enums"
 import styles from "styles/incidents.module.scss"
-import { Case } from "types/types"
+import { Incident } from "types/types"
 
 const isError = (error: unknown): error is Error => error instanceof Error
 
@@ -37,7 +37,7 @@ const CasesPage: NextPage = () => {
             </tr>
           </thead>
           <tbody>
-            {data.allCases.map((c: Case) => (
+            {data.allCases.map((c: Incident) => (
               <tr
                 className={styles.row}
                 key={c.id}
