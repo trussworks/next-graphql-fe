@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Case Page matches snapshot while loading 1`] = `
+exports[`Incident Page matches snapshot while loading 1`] = `
 <div>
   <main
     class="incident"

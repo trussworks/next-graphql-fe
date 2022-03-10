@@ -7,7 +7,7 @@ import { BreadcrumbBar, Breadcrumb } from "@trussworks/react-uswds"
 import styles from "styles/incident.module.scss"
 import { useIncident } from "hooks/incidents"
 
-const CasesPage: NextPage = () => {
+const IncidentPage: NextPage = () => {
   const router = useRouter()
   const { id } = router.query
 
@@ -37,4 +37,4 @@ const CasesPage: NextPage = () => {
   )
 }
 
-export default CasesPage
+export default IncidentPage
