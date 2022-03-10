@@ -14,7 +14,7 @@ const Header = () => {
       <Image src="/temp_logo.png" alt="Next Finder" width={189} height={27} />
       <div className={styles.grow} />
       {user && user.length ? (
-        <Link href="/cases" key="cases-header-link">
+        <Link href="/incidents" key="incidents-header-link">
           <a className={styles.user}>{user}</a>
         </Link>
       ) : null}

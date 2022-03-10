@@ -18,7 +18,7 @@ const CasesPage: NextPage = () => {
       <header>
         <BreadcrumbBar className={styles.breadcrumbs}>
           <Breadcrumb>
-            <Link href="/cases">Home</Link>
+            <Link href="/incidents">Home</Link>
           </Breadcrumb>
           <Breadcrumb current>
             <span className={styles.name}>

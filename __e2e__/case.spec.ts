@@ -20,6 +20,6 @@ test("Test the Case Page", async ({ page }) => {
     page.waitForNavigation(),
   ])
 
-  // Should be on '/cases' page after clicking a row
-  await expect(page.url()).toContain("/cases")
+  // Should be on '/incidents' page after clicking a row
+  await expect(page.url()).toContain("/incidents")
 })

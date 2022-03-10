@@ -13,7 +13,7 @@ const isError = (error: unknown): error is Error => error instanceof Error
 
 const TodoTag = () => <Tag className={styles.todo}>To do</Tag>
 
-const CasesPage: NextPage = () => {
+const IncidentsPage: NextPage = () => {
   const router = useRouter()
   const { data, error } = useIncidents()
   return (
@@ -65,4 +65,4 @@ const CasesPage: NextPage = () => {
   )
 }
 
-export default CasesPage
+export default IncidentsPage

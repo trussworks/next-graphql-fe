@@ -17,7 +17,7 @@ exports[`Case Page matches snapshot while loading 1`] = `
             class="usa-breadcrumb__list-item"
           >
             <a
-              href="/cases"
+              href="/incidents"
             >
               Home
             </a>

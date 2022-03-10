@@ -24,6 +24,6 @@ export class CasesPage {
   }
 
   async goto() {
-    await this.page.goto(`${apiURL}/cases`)
+    await this.page.goto(`${apiURL}/incidents`)
   }
 }

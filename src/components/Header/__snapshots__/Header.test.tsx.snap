@@ -17,7 +17,7 @@ exports[`Header matches snapshot with user 1`] = `
     />
     <a
       class="user"
-      href="/cases"
+      href="/incidents"
     >
       Test User
     </a>
@@ -47,7 +47,7 @@ exports[`Header matches snapshot without user 1`] = `
     />
     <a
       class="user"
-      href="/cases"
+      href="/incidents"
     >
       Test User
     </a>

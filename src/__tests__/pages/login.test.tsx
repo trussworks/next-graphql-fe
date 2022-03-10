@@ -81,7 +81,7 @@ describe("Login Page", () => {
     expect(mockSetUser).toHaveBeenCalledTimes(1)
     expect(mockSetUser).toHaveBeenCalledWith("Test@user")
     expect(mockRoutingPush).toHaveBeenCalledTimes(1)
-    expect(mockRoutingPush).toHaveBeenCalledWith({ pathname: "/cases" })
+    expect(mockRoutingPush).toHaveBeenCalledWith({ pathname: "/incidents" })
   })
 
   it("matches snapshot", () => {
@@ -90,7 +90,7 @@ describe("Login Page", () => {
     expect(container).toMatchSnapshot()
   })
 
-  it("is accessiable", async () => {
+  it("is accessible", async () => {
     const { container } = render(<LoginPage />)
 
     await validateA11y(container)

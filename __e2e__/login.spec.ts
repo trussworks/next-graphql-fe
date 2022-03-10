@@ -28,6 +28,6 @@ test("Test the Login Page", async ({ page }) => {
   // Submit a login
   await loginPage.login()
 
-  // Should be on '/cases' page after logging in
-  expect(page.url()).toContain("/cases")
+  // Should be on '/incidents' page after logging in
+  expect(page.url()).toContain("/incidents")
 })

@@ -12,11 +12,11 @@ test("Test flow of the wireframe across multiple pages", async ({ page }) => {
 
   await loginPage.login()
 
-  // Should be on '/cases' page after logging in
-  await expect(page.url()).toContain("/cases")
+  // Should be on '/incidents' page after logging in
+  await expect(page.url()).toContain("/incidents")
   const casesPage = new CasesPage(page)
 
-  // Validate a few items on the cases page
+  // Validate a few items on the incidents page
   await expect(casesPage.h1).toHaveText("All Alerts")
   await expect(casesPage.table).toHaveCount(1)
   await expect(casesPage.tableHeaders.locator("text=color code")).toHaveCount(1)
