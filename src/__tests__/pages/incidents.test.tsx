@@ -1,22 +1,22 @@
 import React from "react"
 import { screen, waitForElementToBeRemoved } from "@testing-library/react"
 import { renderWithQueryClient as render, validateA11y } from "utils/test-utils"
-import CasesPage from "pages/cases"
+import IncidentsPage from "pages/incidents"
 
-import mockCaseData from "__mocks__/mockCaseData.json"
+import mockIncidentData from "__mocks__/mockIncidentData.json"
 
 jest.mock("next/router", () => ({
   useRouter() {
     return {
-      route: "/cases",
-      pathname: "/cases",
+      route: "/incidents",
+      pathname: "/incidents",
       query: {},
-      asPath: "/cases",
+      asPath: "/incidents",
     }
   },
 }))
 
-/** Validate the common/static header components of the cases page are displayed */
+/** Validate the common/static header components of the incidents page are displayed */
 const validateHeading = () => {
   const h1 = screen.getByRole("heading")
   expect(h1).toBeInTheDocument()
@@ -29,9 +29,9 @@ const validateHeading = () => {
   )
 }
 
-describe("Cases Page", () => {
+describe("Incidents Page", () => {
   it("displays page content while loading", () => {
-    render(<CasesPage />)
+    render(<IncidentsPage />)
 
     validateHeading()
 
@@ -40,15 +40,15 @@ describe("Cases Page", () => {
   })
 
   it("matches snapshot while loading", () => {
-    const { container } = render(<CasesPage />)
+    const { container } = render(<IncidentsPage />)
 
     expect(container).toMatchSnapshot()
   })
 
   it("displays page content with fetched data", async () => {
-    fetchMock.mockResponseOnce(JSON.stringify(mockCaseData))
+    fetchMock.mockResponseOnce(JSON.stringify(mockIncidentData))
 
-    render(<CasesPage />)
+    render(<IncidentsPage />)
 
     validateHeading()
 
@@ -73,7 +73,7 @@ describe("Cases Page", () => {
     ).toBeInTheDocument()
     expect(
       screen.getByRole("columnheader", {
-        name: /case status/i,
+        name: /status/i,
       })
     ).toBeInTheDocument()
     expect(
@@ -96,9 +96,9 @@ describe("Cases Page", () => {
   })
 
   it("matches snapshot with fetched data", async () => {
-    fetchMock.mockResponseOnce(JSON.stringify(mockCaseData))
+    fetchMock.mockResponseOnce(JSON.stringify(mockIncidentData))
 
-    const { container } = render(<CasesPage />)
+    const { container } = render(<IncidentsPage />)
 
     await waitForElementToBeRemoved(() => screen.queryByText("loading..."))
 
@@ -108,7 +108,7 @@ describe("Cases Page", () => {
   it("gracefully handles fetch error and displays error message", async () => {
     fetchMock.mockRejectedValueOnce(new Error("Test Fetch Error"))
 
-    render(<CasesPage />)
+    render(<IncidentsPage />)
 
     validateHeading()
 
@@ -119,9 +119,9 @@ describe("Cases Page", () => {
     expect(screen.queryByRole("table")).not.toBeInTheDocument()
   })
 
-  it("is accessiable ", async () => {
-    fetchMock.mockResponseOnce(JSON.stringify(mockCaseData))
-    const { container } = render(<CasesPage />)
+  it("is accessible ", async () => {
+    fetchMock.mockResponseOnce(JSON.stringify(mockIncidentData))
+    const { container } = render(<IncidentsPage />)
 
     await waitForElementToBeRemoved(() => screen.queryByText("loading..."))
 

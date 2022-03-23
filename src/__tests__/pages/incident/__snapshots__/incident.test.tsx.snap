@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Case Page matches snapshot while loading 1`] = `
+exports[`Incident Page matches snapshot while loading 1`] = `
 <div>
   <main
-    class="case"
+    class="incident"
   >
     <header>
       <nav
@@ -17,7 +17,7 @@ exports[`Case Page matches snapshot while loading 1`] = `
             class="usa-breadcrumb__list-item"
           >
             <a
-              href="/cases"
+              href="/incidents"
             >
               Home
             </a>

@@ -52,7 +52,7 @@ A full-stack web framework built on a NodeJS server for building React applicati
 - `+` Great documentation
 - `+` File-based routing out of the box
 - `+` Allows for API endpoints
-- `*` [Routing](https://nextjs.org/docs/routing/introduction) - Must use the built in NextJS file-system based routing. This routing works by aligning the URL to a folder structure in the project. So a url like `/cases` would show whatever was in the project file at `/pages/cases.ts.` Dynamic routing can be done with square braces, so the route `/cases/123` will use file `/pages/cases/[caseId].ts` and the caseId of `123` would be available as a prop in the `[caseId].ts` file. This is much better for SEO as there are true pages that can be picked up rather than just a single index.js like in CRA.
+- `*` [Routing](https://nextjs.org/docs/routing/introduction) - Must use the built in NextJS file-system based routing. This routing works by aligning the URL to a folder structure in the project. So a url like `/books` would show whatever was in the project file at `/pages/books.ts.` Dynamic routing can be done with square braces, so the route `/books/123` will use file `/pages/books/[bookId].ts` and the bookId of `123` would be available as a prop in the `[bookId].ts` file. This is much better for SEO as there are true pages that can be picked up rather than just a single index.js like in CRA.
 - `-` SSR adds complexity
 - `-` Limited Next.js experience on team
 - `-` SSR loses some usefulness on sites where a user must be ‘logged in’.

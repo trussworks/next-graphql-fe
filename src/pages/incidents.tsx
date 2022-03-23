@@ -3,21 +3,21 @@ import type { NextPage } from "next"
 import { useRouter } from "next/router"
 import { Table, Tag } from "@trussworks/react-uswds"
 
-import { useCases } from "hooks/cases"
+import { useIncidents } from "hooks/incidents"
 import { ColorTag } from "components/ColorTag/ColorTag"
 import { TagColorsEnum } from "types/enums"
-import styles from "styles/cases.module.scss"
-import { Case } from "types/types"
+import styles from "styles/incidents.module.scss"
+import { Incident } from "types/types"
 
 const isError = (error: unknown): error is Error => error instanceof Error
 
 const TodoTag = () => <Tag className={styles.todo}>To do</Tag>
 
-const CasesPage: NextPage = () => {
+const IncidentsPage: NextPage = () => {
   const router = useRouter()
-  const { data, error } = useCases()
+  const { data, error } = useIncidents()
   return (
-    <main className={styles.cases}>
+    <main className={styles.incidents}>
       <h1>All Alerts</h1>
       <p role="paragraph">
         View of all alerts that are active in the system today.
@@ -32,28 +32,28 @@ const CasesPage: NextPage = () => {
               <th scope="col">Color Code</th>
               <th scope="col">Name</th>
               <th scope="col">Date received</th>
-              <th scope="col">Case status</th>
+              <th scope="col">Status</th>
               <th scope="col">InT Analyst Assigned</th>
             </tr>
           </thead>
           <tbody>
-            {data.allCases.map((c: Case) => (
+            {data.allIncidents.map((i: Incident) => (
               <tr
                 className={styles.row}
-                key={c.id}
+                key={i.id}
                 onClick={() => {
-                  router.push(`/case/${c.id}`)
+                  router.push(`/incidents/${i.id}`)
                 }}
               >
                 <td>
-                  <ColorTag color={c.colorCode as TagColorsEnum} />
+                  <ColorTag color={i.colorCode as TagColorsEnum} />
                 </td>
                 <th scope="row">
-                  {c.subject.firstName} {c.subject.lastName}
+                  {i.subject.firstName} {i.subject.lastName}
                 </th>
-                <td>{new Date(c.receivedAt).toLocaleDateString()}</td>
-                <td>{c.status}</td>
-                <td>{c.analyst ? c.analyst.firstName : <TodoTag />}</td>
+                <td>{new Date(i.receivedAt).toLocaleDateString()}</td>
+                <td>{i.status}</td>
+                <td>{i.analyst ? i.analyst.firstName : <TodoTag />}</td>
               </tr>
             ))}
           </tbody>
@@ -65,4 +65,4 @@ const CasesPage: NextPage = () => {
   )
 }
 
-export default CasesPage
+export default IncidentsPage

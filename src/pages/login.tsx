@@ -34,7 +34,7 @@ const LoginPage: NextPage = () => {
 
           setUser(username)
 
-          router.push({ pathname: "/cases" })
+          router.push({ pathname: "/incidents" })
         }}
         className={styles.form}
       >

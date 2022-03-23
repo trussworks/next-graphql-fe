@@ -2,7 +2,7 @@ import { Locator, Page } from "@playwright/test"
 
 const apiURL = process.env.PLAYWRIGHT_URL
 
-export class CasePage {
+export class IncidentPage {
   readonly page: Page
   readonly nav: Locator
   readonly breadcrumbs: Locator
@@ -16,6 +16,6 @@ export class CasePage {
   }
 
   async goto() {
-    await this.page.goto(`${apiURL}/case/1`)
+    await this.page.goto(`${apiURL}/incidents/1`)
   }
 }

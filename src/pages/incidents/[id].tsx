@@ -4,21 +4,21 @@ import { useRouter } from "next/router"
 import Link from "next/link"
 import { BreadcrumbBar, Breadcrumb } from "@trussworks/react-uswds"
 
-import styles from "styles/case.module.scss"
-import { useCase } from "hooks/cases"
+import styles from "styles/incident.module.scss"
+import { useIncident } from "hooks/incidents"
 
-const CasesPage: NextPage = () => {
+const IncidentPage: NextPage = () => {
   const router = useRouter()
   const { id } = router.query
 
-  const { data } = useCase(id)
+  const { data } = useIncident(id)
 
   return (
-    <main className={styles.case}>
+    <main className={styles.incident}>
       <header>
         <BreadcrumbBar className={styles.breadcrumbs}>
           <Breadcrumb>
-            <Link href="/cases">Home</Link>
+            <Link href="/incidents">Home</Link>
           </Breadcrumb>
           <Breadcrumb current>
             <span className={styles.name}>
@@ -37,4 +37,4 @@ const CasesPage: NextPage = () => {
   )
 }
 
-export default CasesPage
+export default IncidentPage

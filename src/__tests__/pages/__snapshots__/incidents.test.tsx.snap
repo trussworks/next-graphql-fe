@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Cases Page matches snapshot while loading 1`] = `
+exports[`Incidents Page matches snapshot while loading 1`] = `
 <div>
   <main
-    class="cases"
+    class="incidents"
   >
     <h1>
       All Alerts
@@ -18,10 +18,10 @@ exports[`Cases Page matches snapshot while loading 1`] = `
 </div>
 `;
 
-exports[`Cases Page matches snapshot with fetched data 1`] = `
+exports[`Incidents Page matches snapshot with fetched data 1`] = `
 <div>
   <main
-    class="cases"
+    class="incidents"
   >
     <h1>
       All Alerts
@@ -55,7 +55,7 @@ exports[`Cases Page matches snapshot with fetched data 1`] = `
           <th
             scope="col"
           >
-            Case status
+            Status
           </th>
           <th
             scope="col"
