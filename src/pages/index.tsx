@@ -23,10 +23,12 @@ const HomePage: NextPage = () => {
           </code>
         </p>
 
-        <a href="/incidents" className={styles.card}>
-            <h2>Incidents &rarr;</h2>
-            <p>All incident entries</p>
-        </a>        
+        <Link href="/incidents">
+          <a className={styles.card}>
+          <h2>Incidents &rarr;</h2>
+            <p>All incident entries</p>            
+          </a>
+        </Link>        
       </main>
     </div>
   )
