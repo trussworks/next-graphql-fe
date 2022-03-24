@@ -8,7 +8,7 @@ import styles from "styles/home.module.scss"
 
 const isError = (error: unknown): error is Error => error instanceof Error
 
-const HelloPage: NextPage = () => {
+const HomePage: NextPage = () => {
   const { data, error } = useHello()
 
   return (
@@ -32,4 +32,4 @@ const HelloPage: NextPage = () => {
   )
 }
 
-export default HelloPage
+export default HomePage

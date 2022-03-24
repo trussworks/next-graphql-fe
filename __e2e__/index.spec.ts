@@ -13,5 +13,5 @@ test("Test the Index page using Page Object Model pattern", async ({
   )
   await expect(indexPage.backendGreeting).toHaveText("Hello World!")
 
-  await expect(indexPage.homeLink).toHaveAttribute("href", "/incidents")
+  await expect(indexPage.incidentsLink).toHaveAttribute("href", "/incidents")
 })

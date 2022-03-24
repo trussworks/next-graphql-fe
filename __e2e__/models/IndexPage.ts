@@ -9,7 +9,7 @@ export class IndexPage {
   readonly h1: Locator
   readonly description: Locator
   readonly backendGreeting: Locator
-  readonly homeLink: Locator
+  readonly incidentsLink: Locator
 
   constructor(page: Page) {
     this.page = page
@@ -18,7 +18,7 @@ export class IndexPage {
     this.h1 = this.main.locator("h1")
     this.description = this.main.locator("p").first()
     this.backendGreeting = this.description.locator("code")
-    this.homeLink = this.main.locator("a").first()
+    this.incidentsLink = this.main.locator("a").first()
   }
 
   async goto() {
