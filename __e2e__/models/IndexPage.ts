@@ -8,13 +8,8 @@ export class IndexPage {
   readonly main: Locator
   readonly h1: Locator
   readonly description: Locator
-  readonly links: Locator
-  readonly helloLink: Locator
-  readonly docsLink: Locator
-  readonly learnLink: Locator
-  readonly examplesLink: Locator
-  readonly deployLink: Locator
-  readonly footer: Locator
+  readonly backendGreeting: Locator
+  readonly homeLink: Locator
 
   constructor(page: Page) {
     this.page = page
@@ -22,16 +17,13 @@ export class IndexPage {
     this.main = page.locator("main")
     this.h1 = this.main.locator("h1")
     this.description = this.main.locator("p").first()
-    this.links = this.main.locator("a")
-    this.helloLink = this.links.nth(0)
-    this.docsLink = this.links.nth(1)
-    this.learnLink = this.links.nth(2)
-    this.examplesLink = this.links.nth(3)
-    this.deployLink = this.links.nth(4)
-    this.footer = page.locator("footer")
+    this.backendGreeting = this.description.locator("code")
+    this.homeLink = this.main.locator("a").first()
   }
 
   async goto() {
-    await this.page.goto(`${apiURL}/`)
+    await this.page.goto(`${apiURL}/`, {
+      waitUntil: "networkidle",
+    })
   }
 }
