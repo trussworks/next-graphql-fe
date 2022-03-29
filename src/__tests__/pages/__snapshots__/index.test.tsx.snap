@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home matches snapshot 1`] = `
+exports[`Index Page matches loading snapshot 1`] = `
 <div>
   <div
     class="container"
@@ -11,96 +11,71 @@ exports[`Home matches snapshot 1`] = `
       <h1
         class="title"
       >
-        Welcome to the Next Front-End
+        Hello, welcome to the JEDI Project
       </h1>
       <p
         class="description"
       >
-        Get started by editing
+        Greetings from the Backend:
          
         <code
           class="code"
         >
-          pages/index.tsx
+          loading...
         </code>
       </p>
       <a
         class="card"
-        href="/hello"
+        href="/incidents"
       >
-        Test Page
+        <h2>
+          Incidents →
+        </h2>
+        <p>
+          All incident entries
+        </p>
       </a>
-      <div
-        class="grid"
-      >
-        <a
-          class="card"
-          href="https://nextjs.org/docs"
-        >
-          <h2>
-            Documentation →
-          </h2>
-          <p>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-        <a
-          class="card"
-          href="https://nextjs.org/learn"
-        >
-          <h2>
-            Learn →
-          </h2>
-          <p>
-            Learn about Next.js in an interactive course with quizzes!
-          </p>
-        </a>
-        <a
-          class="card"
-          href="https://github.com/vercel/next.js/tree/master/examples"
-        >
-          <h2>
-            Examples →
-          </h2>
-          <p>
-            Discover and deploy boilerplate example Next.js projects.
-          </p>
-        </a>
-        <a
-          class="card"
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        >
-          <h2>
-            Deploy →
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a public URL with Vercel.
-          </p>
-        </a>
-      </div>
     </main>
-    <footer
-      class="footer"
+  </div>
+</div>
+`;
+
+exports[`Index Page matches snapshot with fetched data 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <main
+      class="main"
     >
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        rel="noopener noreferrer"
-        target="_blank"
+      <h1
+        class="title"
       >
-        Powered by
+        Hello, welcome to the JEDI Project
+      </h1>
+      <p
+        class="description"
+      >
+        Greetings from the Backend:
          
-        <span
-          class="logo"
+        <code
+          class="code"
         >
-          <img
-            alt="Vercel Logo"
-            height="16"
-            src="/vercel.svg"
-            width="72"
-          />
-        </span>
+          Hello World!
+        </code>
+      </p>
+      <a
+        class="card"
+        href="/incidents"
+      >
+        <h2>
+          Incidents →
+        </h2>
+        <p>
+          All incident entries
+        </p>
       </a>
-    </footer>
+    </main>
   </div>
 </div>
 `;
