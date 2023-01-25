@@ -25,7 +25,7 @@
     "uswds": "2.13.1"
   },
   "devDependencies": {
-    "@playwright/test": "1.17.0-next-alpha-nov-5-2021",
+    "@playwright/test": "1.30.0",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "@types/jest-axe": "^3.5.3",
